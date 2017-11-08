@@ -1,0 +1,1194 @@
+@charset "utf-8";
+/* CSS Write Yuzi 2015.7.30 www.wke.design 75667980 */
+@import "variables.less";
+@import "flex.less";
+
+/*-- 默认Android -------------------------------------------*/
+html {
+  font-size: 20px;
+}
+
+/*-- 兼容iphone4/4s -------------------------------------------*/
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/*-- 兼容iphone5 -----------------------------------------*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/*-- 兼容iphone 6 --------------------------------------------*/
+@media (device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 20px;
+  }
+
+  .history-wrapper {
+    top: 120px;
+  }
+}
+
+/*-- 兼容iphone6 plus --------------------------------------------*/
+@media (device-width: 414px) and (-webkit-min-device-pixel-ratio: 3.0) {
+  html {
+    font-size: 23px;
+  }
+}
+
+/*-- 兼容 iPad 3 & 4 ------------------------------------------*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 20px;
+  }
+
+  .list input {
+    font-size: .8rem;
+    padding: 0;
+    height: 1rem;
+    vertical-align: super;
+    border: none;
+    background: rgba(255, 255, 255, 1) !important;
+  }
+}
+
+/*-- 自适应分辨率 ------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+
+  .header {
+    .head-info {
+      h2 {
+        font-size: 2rem;
+        margin: 0 1rem;
+      }
+      h3 {
+        font-size: .8rem;
+      }
+    }
+    .header-login {
+      right: inherit;
+      left: 9.8rem;
+      top: 1rem;
+      &:before{
+        display: none;
+      }
+    }
+    .menu {
+      bottom: 0;
+      top: 1rem;
+      right: 0;
+      width: 4rem;
+      line-height: 2rem;
+      text-align: center;
+      background: transparent;
+      border-bottom: none;
+      i {
+        display: inline-block;
+        &:before {
+          margin: .4rem;
+        }
+      }
+      .menubackground {
+        content: '';
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      .menubox {
+        position: fixed;
+        height: auto;
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        right: 0;
+        left: 0;
+        top: 0;
+        display: none;
+        transform: translate3d(0,-100%,0);
+        padding: 3rem 1.5rem 2rem 1.5rem;
+        i {
+          display: block;
+        }
+        .icon-close{
+          width: 2rem;
+          height: 2rem;
+          color: lighten(@color-c000, 50%);;
+          font-size: @font24;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          border-radius: 50%;
+          padding: .2rem;
+          display: block;
+          cursor: pointer;
+          background: transparent;
+          transition: all .3s ease-in-out;
+          &:hover{
+            background: @color-cgreen;
+          }
+        }
+        &:before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-left: .4rem solid transparent;
+          border-right: .4rem solid transparent;
+          border-bottom: .4rem solid rgba(255, 255, 255, .98);
+          position: absolute;
+          top: -.4rem;
+          right: .5rem;
+        }
+      }
+      li {
+        padding: 0;
+        width: @width;
+        text-indent: 1rem;
+        text-align: left;
+        color: length(@color-c000, 90%);
+        float: left;
+        margin: 0;
+        color: @color-c000;
+        height: initial;
+        line-height: 2.5rem;
+        border-bottom: 0 solid lighten(@color-c000, 95%);
+        a {
+          border-bottom: 1px solid lighten(@color-c000, 95%);
+          color: @color-c000;
+          &:active, &:hover {
+            background: rgba(0, 0, 0, .02);
+            border-bottom: 1px solid lighten(@color-c000, 95%);
+            height: 2.5rem;
+          }
+          &.active {
+            color: rgba(71, 184, 95, 1) !important;
+            background: rgba(71, 184, 95, 0);
+            border-bottom: 1px solid lighten(@color-c000, 95%);
+            height: 2.5rem;
+          }
+        }
+        &:hover {
+          .submenu {
+            display: block;
+          }
+        }
+        
+      }
+      .submenu {
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+        a {
+          border-bottom: 1px solid lighten(@color-c000, 95%);
+          &:hover {
+            border-bottom: 1px solid lighten(@color-c000, 95%) !important;
+          }
+          &:last-child {
+            border-bottom: 1px solid lighten(@color-c000, 95%) !important;
+          }
+        }
+      }
+    }
+
+    .bar {
+      display: none;
+    }
+
+    .slide-1-info{
+      h2{
+        font-size: 1.6rem;
+      }
+      h3{
+        font-size: @font16;
+      }
+    }
+    .slide-2-info{
+      left: 0;
+      padding-left: 0;
+      text-align: center;
+      h2{
+        font-size: 1.6rem;
+      }
+      h3{
+        font-size: @font16;
+      }
+    }
+    .swiper-button-next,.swiper-button-prev{
+      display: none;
+    }
+  }
+
+  .smartfarm-header .slide-1-info {
+    margin-top: 0;
+    bottom: 3rem;
+    h2 {
+      text-align: center;
+      padding: 0 1rem;
+    }
+    ul {
+      text-align: center;
+      li {
+        float: left;
+        width: 50%;
+        display: inline-block;
+        padding: 0;
+        text-align: center;
+        &:last-child {
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .farm-list {
+    .farm-description {
+      max-width: 90%;
+    }
+    &.farm-task {
+      padding-bottom: 11rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 11rem;
+      background-size: 150%;
+    }
+    &.farm-chart {
+      padding-bottom: 11rem;
+      background-size: 150%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 11rem;
+      background-size: 140%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 14rem;
+      background-size: 150%;
+    }
+    &.sfarm-other {
+      padding-bottom: 10rem;
+      background-size: 150%;
+    }
+  }
+
+  .title {
+    text-align: center;
+    padding: 2rem 0;
+    h4 {
+      font-size: @font30;
+    }
+  }
+
+  .subnav {
+    overflow: auto;
+    ul {
+      display: inline-table;
+      width: @width;
+      li {
+        width: 33.33333333329%;
+        display: inline-block;
+        margin: .5rem 0;
+        float: left;
+        .icon-erp:before {
+          padding: 0 0 0 .3rem;
+        }
+        i {
+          width: 3rem;
+          height: 3rem;
+          line-height: 3rem;
+          font-size: 2.5rem;
+        }
+        div {
+          width: 3rem;
+          height: 3rem;
+          &:before {
+            left: -.2rem;
+            font-size: 3.65rem;
+          }
+        }
+      }
+    }
+  }
+
+  .applybox {
+    margin-top: 3rem;
+    font-size: 0px;
+    ul {
+      padding: 0;
+      display: inline-table;
+      li {
+        width: 100%;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid @color-cfff;
+        i {
+          font-size: 4.5rem;
+          float: left;
+          text-align: center;
+          width: 6rem;
+          height: 6rem;
+          line-height: 6rem;
+        }
+        dl {
+          margin-top: .5rem;
+          dt {
+            font-size: 1rem;
+            margin: .6rem 0;
+          }
+          dd {
+            line-height: 1rem;
+            button {
+              border-radius: 0;
+              margin-top: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              background: rgba(0, 0, 0, .05);
+              color: @color-c000;
+            }
+          }
+          dd:last-child {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .05);
+          }
+        }
+      }
+    }
+  }
+
+  .searchbox {
+    margin-top: -1rem;
+    width: 80%;
+    input {
+      width: 70%;
+    }
+  }
+
+  .baikebox {
+    width: 100%;
+    overflow: hidden;
+    ul {
+      display: block;
+      li {
+        width: 50%;
+        float: left;
+        padding-bottom: 36%;
+      }
+    }
+  }
+
+  .articlebox {
+    .article-li {
+      padding: 1rem 0;
+      dl {
+        max-width: 90%;
+        right: 0;
+        dt {
+          font-size: 1rem;
+        }
+        dd.icon-arrowright {
+          display: none;
+        }
+        dd:last-child {
+          display: none;
+        }
+      }
+
+      &:hover {
+        dl {
+          right: 0rem;
+        }
+      }
+    }
+
+  }
+
+  .teambox {
+    width: @width;
+    .team-l {
+      display: block;
+      .team-l-con {
+        margin-right: 0;
+      }
+      .team-l-con:first-child {
+        margin-bottom: 0
+      }
+    }
+    .team-r {
+      flex: 0 0 46.7%;
+    }
+    text {
+      font-size: @font16;
+    }
+  }
+
+  .intro{
+    padding: 0;
+    width: 90%;
+    &.news-detail{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .join-container{
+    height: auto;
+    padding: 2rem 0;
+    dl{
+      width: 90%;
+      dd{
+        width: 100%;
+      }
+    }
+    .swiper-button-next,.swiper-button-prev{
+      display: none;
+    }
+  }
+
+  .app-down-container{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,.98);
+    margin: 0;
+    border-radius: 0;
+    .icon-close{
+      right: .5rem;
+      top: .5rem;
+      color: lighten(@color-c000, 50%);
+    }
+    .app-down-content{
+      flex-wrap: wrap;
+      overflow: auto;
+      position: absolute;
+      top: 4rem;
+      bottom: 0;
+      dl{
+        width: 90%;
+        margin-bottom: .5rem;
+        padding: 0 1rem;
+        dd{
+          width: 40%;
+          &:nth-child(3){
+            float: right;
+          }
+        }
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footernavbox {
+      padding: 0;
+      flex-direction: column;
+      dl {
+        position: relative;
+        overflow: hidden;
+        padding: .5rem 1rem;
+        padding-left: 5rem;
+        line-height: 1.5rem;
+        dt {
+          position: absolute;
+          left: 1rem;
+          top: .6rem;
+          width: 2rem;
+        }
+        dd {
+          width: 33.33333333329%;
+          float: left;
+        }
+        &:nth-child(4) {
+          dd {
+            width: 100%;
+          }
+        }
+        &:nth-child(odd) {
+          background: rgba(0, 0, 0, .1);
+        }
+      }
+      .code {
+        margin: 2rem auto;
+      }
+    }
+  }
+
+  .fonts{
+    font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+  }
+
+  .about-header{
+    .slide-1-info{
+      top: initial;
+      bottom: 2rem;
+      height: auto;
+    }
+  }
+
+  .service-header {
+
+    .head-background {
+      zoom: 1 !important;
+      background-size: 202% !important;
+      background-position: center bottom !important;
+      background-color: #eef1f6 !important;
+    }
+
+    .head-info {
+      position: absolute;
+      z-index: 1000;
+      button {
+        margin: 4rem auto 0 auto;
+        margin-top: 3rem;
+        display: block;
+        &:last-child {
+          padding: 0;
+          background: transparent;
+          color: @color-c000;
+          font-size: @font16;
+          margin-top: 1rem;
+          &:hover, &:active {
+            background: transparent;
+            color: rgba(0, 0, 0, .5);
+          }
+        }
+      }
+    }
+
+    .slide-1-info{
+      margin-top: 3rem;
+    }
+
+  }
+
+  .service-content {
+    padding: 0;
+    height: 100%;
+    i {
+      flex: inherit;
+      margin-top: 1rem;
+    }
+    .service-content-box{
+      flex-direction: column;
+      section {
+        flex: 1;
+      }
+      section:nth-child(2) {
+        text-align: center;
+        font-size: @font14;
+        h4 {
+          padding-bottom: .5rem;
+        }
+      }
+      section:last-child {
+        padding: 0 1rem;
+        margin-top: 1rem;
+      }
+    }
+    &.service-r {
+      .service-content-box{
+        width: @width;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        i {
+          position: absolute;
+          top: 0;
+          width: @width;
+          text-align: center;
+        }
+        section:nth-child(2) {
+          text-align: center;
+          font-size: @font14;
+          position: absolute;
+          top: 7.3rem;
+          width: @width;
+          h4 {
+            padding-bottom: .5rem;
+          }
+        }
+        section:first-child {
+          position: absolute;
+          top: 15.2rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+    
+  }
+
+  .app-header{
+    .appImg{
+      display: none;
+    }
+    .appdownbox{
+      left: 0;
+      top: 5rem;
+      margin-left: inherit;
+      h3{
+        font-size: @font40;
+        text-align: center;
+        display: none;
+      }
+      ul{
+        width: 48%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        li{
+          padding: .5rem 1rem;
+          img{
+            width: 90%;
+          }
+        }
+        button{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .login-container {
+
+    .loginbox {
+      left: 5%;
+      right: 5%;
+      padding-bottom: 1rem;
+      .loginwrap {
+        width: 80%;
+        li {
+          input {
+            width: @width - 7.5%;
+          }
+          .urlbox {
+            font-size: @font14;
+            height: 2.2rem;
+            input {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .farm-header {
+    height: 100%;
+    .head-background {
+      height: 100%;
+      background-size: 32rem !important;
+    }
+  }
+  .farm-list {
+    padding-bottom: 1rem;
+    background-size: 32rem !important;
+    .farm-description {
+      max-width: 90%;
+    }
+  }
+
+  .smartfarm-header {
+    .slide-1-info {
+      ul {
+        margin-top: 4.5rem;
+        li {
+          b {
+            font-size: .8rem;
+          }
+          p {
+            font-size: .6rem;
+          }
+          &:nth-of-type(2) {
+            margin-bottom: 1rem;
+            &:before {
+              border-right: none;
+            }
+          }
+          &:nth-of-type(3) {
+            display: none;
+          }
+          &:last-child {
+            padding-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  html {
+    font-size: 20px;
+  }
+
+  .login-container {
+    .loginbox {
+      left: 5%;
+      right: 5%;
+      .loginwrap {
+        width: 80%;
+        li {
+          .urlbox {
+            input {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 20px;
+  }
+
+  .header{
+    .slide-1-info,.slide-2-info{
+      h2{
+        font-size: @font60;
+        padding: 0 2rem;
+      }
+    }
+    .swiper-button-next,.swiper-button-prev{
+      display: none;
+    }
+  }
+
+  .farm-list {
+    &.farm-task {
+      padding-bottom: 16rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 17rem;
+      background-size: 140%;
+    }
+    &.farm-chart {
+      padding-bottom: 17rem;
+      background-size: 140%;
+    }
+  }
+
+  .subnav {
+    overflow: auto;
+    ul {
+      display: inline-table;
+      width: @width;
+      li {
+        width: 33.33333333329%;
+        display: inline-block;
+        margin: .5rem 0;
+        .icon-erp:before {
+          padding: 0 0 0 .3rem;
+        }
+        i {
+          width: 4.5rem;
+          height: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 2.5rem;
+          padding: 0;
+        }
+        div {
+          width: 4.5rem;
+          height: 4.5rem;
+          &:before {
+            left: -.05rem;
+            top: -.05rem;
+            font-size: 4.5rem;
+            zoom: 1.02;
+          }
+        }
+        h2{
+          padding: .5rem 0 .2rem 0;
+        }
+      }
+    }
+  }
+
+  .other-subnav{
+    ul li{
+      padding: 0 3%;
+      float: left;
+    }
+  }
+
+  .applybox ul li i {
+    vertical-align: top;
+  }
+
+  footer {
+    .footernavbox {
+      padding: 2rem 3rem;
+      .code {
+        width: 7rem;
+        height: 7rem;
+        display: none;
+      }
+    }
+  }
+
+  .login-container {
+    .loginbox {
+      left: 12%;
+      right: 12%;
+    }
+  }
+
+  .join-container{
+    height: auto;
+    padding: 2rem 0;
+    dl{
+      width: 70%;
+      dd{
+        width: 100%;
+      }
+    }
+  }
+
+  .app-down-container{
+    width: 30rem;
+    height: 26rem;
+    margin: -13rem 0 0 -15rem;
+    .app-down-content{
+      flex-wrap: wrap;
+      dl:last-child{
+        width: 100%;
+        margin-top: 1.5rem;
+        border-top: 1px solid lighten(@color-c000, 98%);
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .smartfarm-header .slide-1-info {
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    ul {
+      text-align: center;
+      li {
+        float: inherit;
+        width: auto;
+        display: inline-block;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .farm-list {
+    .farm-description {
+      max-width: 90%;
+    }
+    &.farm-task {
+      padding-bottom: 18rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 19rem;
+      background-size: 140%;
+    }
+    &.farm-chart {
+      padding-bottom: 19rem;
+      background-size: 140%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 18rem;
+      background-size: 140%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 24rem;
+      background-size: 150%;
+    }
+    &.sfarm-other {
+      padding-bottom: 16rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (width: 768px) {
+  .header {
+    .slide-1-info {
+      ul {
+        li {
+          b {
+            font-size: 1rem !important;
+          }
+          p {
+            font-size: .6rem !important;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  .smartfarm-header .slide-1-info {
+    h2 {
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      li {
+        float: inherit;
+        width: auto;
+        display: inline-block;
+      }
+    }
+  }
+  .farm-list {
+    .farm-description {
+      max-width: 80%;
+    }
+    &.farm-task {
+      padding-bottom: 19rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 21rem;
+      background-size: 140%;
+    }
+    &.farm-chart {
+      padding-bottom: 21rem;
+      background-size: 140%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 21rem;
+      background-size: 140%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 28rem;
+      background-size: 150%;
+    }
+    &.sfarm-other {
+      padding-bottom: 20rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .farm-list {
+    .farm-description {
+      max-width: 70%;
+    }
+    &.farm-task {
+      padding-bottom: 20rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 22rem;
+      background-size: 140%;
+    }
+    &.farm-chart {
+      padding-bottom: 22rem;
+      background-size: 140%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 19rem;
+      background-size: 120%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 28rem;
+      background-size: 140%;
+    }
+    &.sfarm-other {
+      padding-bottom: 20rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (width: 1280px) {
+  html {
+    font-size: 20px;
+  }
+  .farm-list {
+    &.farm-task {
+      padding-bottom: 23rem;
+      background-size: 120%;
+    }
+    &.farm-trace {
+      padding-bottom: 23rem;
+      background-size: 120%;
+    }
+    &.farm-chart {
+      padding-bottom: 23rem;
+      background-size: 120%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 23rem;
+      background-size: 120%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 35rem;
+      background-size: 140%;
+    }
+    &.sfarm-other {
+      padding-bottom: 25rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (width: 1366px) {
+  html {
+    font-size: 20px;
+  }
+  .farm-list {
+    &.farm-task {
+      padding-bottom: 24rem;
+      background-size: 120%;
+    }
+    &.farm-trace {
+      padding-bottom: 24rem;
+      background-size: 120%;
+    }
+    &.farm-chart {
+      padding-bottom: 24rem;
+      background-size: 120%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 25rem;
+      background-size: 120%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 37rem;
+      background-size: 140%;
+    }
+    &.sfarm-other {
+      padding-bottom: 27rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px){
+  html {
+    font-size: 20px;
+  }
+  .formatFile{
+    ul{
+      flex-wrap: wrap;
+      padding:0;
+      li{
+        .justify_content_center;
+        width: 25%;
+        margin-bottom: 3rem;
+        &:nth-of-type(2n){
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+  .farm-list {
+    &.farm-task {
+      padding-bottom: 25rem;
+      background-size: 120%;
+    }
+    &.farm-trace {
+      padding-bottom: 25rem;
+      background-size: 120%;
+    }
+    &.farm-chart {
+      padding-bottom: 25rem;
+      background-size: 120%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 27rem;
+      background-size: 120%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 38rem;
+      background-size: 140%;
+    }
+    &.sfarm-other {
+      padding-bottom: 29rem;
+      background-size: 150%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  html {
+    font-size: 24px;
+  }
+  .farm-list {
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 22rem;
+    }
+    &.sfarm-trace {
+      padding-bottom: 27rem;
+    }
+    &.sfarm-other {
+      padding-bottom: 20rem;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 40px;
+  }
+}
+
