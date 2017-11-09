@@ -25,7 +25,7 @@
     <script type="text/javascript">
         function preloader() {
             if (document.getElementById) {
-                document.getElementById("slide0").style.background = "url(img/slide0.jpg) no-repeat center";
+                document.getElementById("slide0").style.background = "url(img/banner.jpg) no-repeat center";
                 document.getElementById("slide1").style.background = "url(img/farmbackground.jpg) no-repeat center";
             }
         }
@@ -83,12 +83,12 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide-1-info fade-from-on-to-down" id="slide-1">
-                    <h2 class="fadein fonts">开启农业全程信息化时代</h2>
-                    <h3 class="fadein">Open The Whole Agricultural Information Age</h3>
+                    <h2 class="fadein fonts">从<span>田间到餐桌</span> “一站式” 运营服务平台</h2>
+                    <h3 class="fadein">One Stop Operation Service Platform Form Field To Dining Table</h3>
                     <!--<button class="fadein" onClick="alert('我被鼠标点中了！')">注册体验</button> -->
                 </div>
                 <div class="head-background-layer fadeIn"></div>
-                <div class="head-background" style="background: url(img/slide0s.jpg) no-repeat center; background-size: cover;"></div>
+                <div class="head-background" style="background: url(img/banner.jpg) no-repeat center; background-size: cover;"></div>
                 <div class="head-background" id="slide0"></div>
             </div>
             <div class="swiper-slide">
@@ -206,6 +206,9 @@
 <br>
 <br>
 <br>
+<div class="test">
+    <div class="test1">你好</div>
+</div>
 
 <!--申请使用-->
 <article class="applybox">
@@ -612,7 +615,7 @@
         keyboardControl: true,
         onInit: function (swiper) {
             //Swiper初始化了
-            //alert(swiper.activeIndex);//提示Swiper的当前索引
+//            alert(swiper.activeIndex);//提示Swiper的当前索引
             $("#slide-1").addClass("fadeshow");
         },
         onSlideChangeStart: function (swiper) {

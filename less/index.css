@@ -967,7 +967,30 @@ input::-webkit-input-placeholder {
 .content-bg {
   background-color: rgba(0, 0, 0, 0.02);
 }
+.test {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  height: 100px;
+}
+.test .test1 {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  border: 1px solid red;
+  padding: 0 100px;
+}
 .formatFile {
+  max-width: 72rem;
   margin: 0 auto;
 }
 .formatFile ul {
