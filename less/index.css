@@ -792,7 +792,8 @@ input::-webkit-input-placeholder {
   width: 100%;
   position: absolute;
   z-index: 3;
-  text-align: center;
+  text-align: left;
+  padding-left: 10%;
   height: 13rem;
   left: 0;
   top: 50%;
@@ -802,13 +803,19 @@ input::-webkit-input-placeholder {
 }
 .header .slide-1-info h2,
 .header .slide-2-info h2 {
-  font-size: 3.5rem;
+  font-weight: bold;
+  font-size: 2.4rem;
   color: #ffffff;
+}
+.header .slide-1-info h2 span,
+.header .slide-2-info h2 span {
+  color: #d2ff91;
 }
 .header .slide-1-info h3,
 .header .slide-2-info h3 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
+  margin-top: .8rem;
 }
 .header .slide-1-info button,
 .header .slide-2-info button {
@@ -1023,14 +1030,14 @@ input::-webkit-input-placeholder {
   display: flex;
   margin-bottom: 2rem;
 }
-.formatFile ul li:hover .mask,
-.formatFile ul li:hover p {
-  display: block;
-}
 .formatFile ul li div {
   width: 8rem;
   height: 10rem;
   position: relative;
+}
+.formatFile ul li div:hover .mask,
+.formatFile ul li div:hover p {
+  display: block;
 }
 .formatFile ul li div img {
   width: 100%;
@@ -1057,6 +1064,7 @@ input::-webkit-input-placeholder {
   color: #fff;
   text-align: justify;
   display: none;
+  text-overflow: ellipsis;
 }
 .formatFile ul li div h2 {
   position: absolute;
@@ -1065,6 +1073,68 @@ input::-webkit-input-placeholder {
   font-size: 0.8rem;
   padding-top: 1rem;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.solution {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
+  padding: 3.475rem 4rem;
+}
+.solution .solution-l {
+  flex: 1 0 auto;
+  width: 27.6rem;
+  margin-right: 2rem;
+}
+.solution .solution-l img {
+  vertical-align: bottom;
+  float: left;
+}
+.solution .solution-l .bgImg {
+  width: 100%;
+  height: 12.55rem;
+}
+.solution .solution-l .smImg {
+  width: 33.33333333329%;
+  height: 5.5rem;
+}
+.solution .solution-r {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.solution .solution-r .st_tit {
+  font-size: 1.2rem;
+  color: #333;
+  margin: .4rem 0 1.2rem 0;
+}
+.solution .solution-r .st_subTit {
+  font-size: .7rem;
+  color: #333;
+  margin-bottom: .4rem;
+}
+.solution .solution-r p {
+  font-size: .7rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+.solution .solution-r p:last-child {
+  margin-bottom: 0;
 }
 .subnav {
   max-width: 58rem;

@@ -747,6 +747,32 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 1rem;
   }
 
+  //图文
+  .formatFile{
+    ul{
+      flex-wrap: wrap;
+      padding:0;
+      li{
+        .justify_content_center;
+        width: 25%;
+        margin-bottom: 3rem;
+        &:nth-child(n+5){
+          margin-bottom: 2rem;
+        }
+        div{
+          width: 5rem;
+          height: 7rem;
+          &:hover{
+            .mask, p{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -781,7 +807,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .header{
     .slide-1-info,.slide-2-info{
       h2{
-        font-size: @font60;
+        font-size: 2.5rem;
+        padding: 0 2rem;
+      }
+      h3{
         padding: 0 2rem;
       }
     }
@@ -1108,7 +1137,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen and (max-width: 1440px){
+@media only screen and (min-width: 768px) and (max-width: 1439px){
   html {
     font-size: 20px;
   }

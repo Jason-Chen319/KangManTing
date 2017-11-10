@@ -723,6 +723,34 @@ html {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 1rem;
   }
+  .formatFile ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .formatFile ul li {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    /*混合版本语法*/
+    -ms-flex-pack: center;
+    /*新版本语法*/
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 25%;
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+5) {
+    margin-bottom: 2rem;
+  }
+  .formatFile ul li div {
+    width: 5rem;
+    height: 7rem;
+  }
+  .formatFile ul li div:hover .mask,
+  .formatFile ul li div:hover p {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   html {
@@ -745,7 +773,11 @@ html {
   }
   .header .slide-1-info h2,
   .header .slide-2-info h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 0 2rem;
+  }
+  .header .slide-1-info h3,
+  .header .slide-2-info h3 {
     padding: 0 2rem;
   }
   .header .swiper-button-next,
@@ -1019,7 +1051,7 @@ html {
     background-size: 150%;
   }
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   html {
     font-size: 20px;
   }
