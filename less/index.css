@@ -1090,7 +1090,7 @@ input::-webkit-input-placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-wrap: wrap;
+  height: 25rem;
   background: #f8f8f8;
   padding: 3.475rem 4rem;
 }
@@ -1111,30 +1111,212 @@ input::-webkit-input-placeholder {
   width: 33.33333333329%;
   height: 5.5rem;
 }
-.solution .solution-r {
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
 .solution .solution-r .st_tit {
   font-size: 1.2rem;
   color: #333;
-  margin: .4rem 0 1.2rem 0;
+  line-height: 1.8rem;
 }
 .solution .solution-r .st_subTit {
   font-size: .7rem;
   color: #333;
-  margin-bottom: .4rem;
 }
 .solution .solution-r p {
   font-size: .7rem;
   color: #999;
-  margin-bottom: 2rem;
+  margin: .4rem 0 2rem 0;
 }
 .solution .solution-r p:last-child {
   margin-bottom: 0;
+}
+.profile {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 0 4rem;
+}
+.profile .profile_l {
+  margin-right: 3rem;
+  width: 769px;
+}
+.profile .profile_l p {
+  text-indent: 2em;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+.profile .profile_l div {
+  font-size: 0.7rem;
+  color: #999;
+  text-align: right;
+}
+.profile .profile_l div span {
+  display: inline-block;
+  padding: .1rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.profile .profile_r img {
+  width: 21rem;
+  height: 12.5rem;
+}
+.dispatching {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  /*混合版本语法*/
+  -ms-flex-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+  /*垂直居中*/
+  /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center;
+  height: 28.4rem;
+  background: #f8f8f8;
+  position: relative;
+}
+.dispatching .semicircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -350px;
+  width: 700px;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  border-radius: 350px 350px 0 0;
+}
+.dispatching .semicircle .innerImg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 203px;
+  height: 140px;
+  margin-left: -101.5px;
+}
+.dispatching .semicircle .innerImg img {
+  width: 100%;
+  height: 100%;
+}
+.dispatching .semicircle .flowPath {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: absolute;
+}
+.dispatching .semicircle .flowPath:hover p,
+.dispatching .semicircle .flowPath:hover span {
+  display: block;
+}
+.dispatching .semicircle .flowPath.step1 {
+  left: -9.45rem;
+  bottom: 0;
+}
+.dispatching .semicircle .flowPath.step2 {
+  left: -164px;
+  bottom: 106px;
+}
+.dispatching .semicircle .flowPath.step3 {
+  left: 181.5px;
+  bottom: 212px;
+}
+.dispatching .semicircle .flowPath.step4 {
+  left: 248.5px;
+  top: -30px;
+}
+.dispatching .semicircle .flowPath.step5 {
+  right: 248.5px;
+  top: -30px;
+}
+.dispatching .semicircle .flowPath h3 {
+  font-size: 0.7rem;
+  color: #333;
+  line-height: 3.2rem;
+  margin: 0 .5rem;
+}
+.dispatching .semicircle .flowPath div {
+  position: relative;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: .2rem;
+  background: #f8f8f8;
+  border-radius: 50%;
+}
+.dispatching .semicircle .flowPath div img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.dispatching .semicircle .flowPath div p {
+  position: absolute;
+  top: .2rem;
+  left: .2rem;
+  width: 3rem;
+  height: 3rem;
+  background: #000;
+  opacity: .6;
+  border-radius: 50%;
+  display: none;
+}
+.dispatching .semicircle .flowPath div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  display: none;
 }
 .subnav {
   max-width: 58rem;
@@ -1565,52 +1747,76 @@ input::-webkit-input-placeholder {
 .teambox .team-r:hover text strong {
   bottom: 1rem;
 }
-footer {
-  background: rgba(0, 0, 0, 0.8);
-}
-footer .footernavbox {
-  padding: 3rem 5rem;
+.footer {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
-  flex-direction: row;
-  color: #ffffff;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  /*混合版本语法*/
+  -ms-flex-pack: space-between;
+  /*新版本语法*/
+  -webkit-justify-content: flex-space-between;
+  justify-content: space-between;
+  /*垂直居中*/
+  /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center;
+  height: 6.7rem;
+  background: #f8f8f8;
+  padding: 0 4rem;
 }
-footer .footernavbox a {
-  color: rgba(255, 255, 255, 0.6);
-}
-footer .footernavbox dl {
-  flex: 1;
-  font-size: 0.7rem;
-  line-height: 1.7rem;
-}
-footer .footernavbox dl dt {
-  font-size: 0.8rem;
-  padding-bottom: .8rem;
-}
-footer .footernavbox dl dd {
-  color: rgba(255, 255, 255, 0.6);
-}
-footer .footernavbox dl:nth-child(4) {
-  flex: 2;
-}
-footer .footernavbox .code {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 0.15rem;
-  background: #ffffff;
-}
-footer .footernavbox .code img {
-  width: 100%;
-}
-footer .copyright {
-  background: #000000;
-  line-height: 1.3rem;
-  padding: 1rem;
-  text-align: center;
+.footer p {
   font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #666;
+  margin-bottom: .75rem;
 }
-footer .copyright a {
-  color: rgba(255, 255, 255, 0.5);
+.footer p:last-child {
+  margin-bottom: 0;
+}
+.footer p span {
+  margin-right: 1rem;
+}
+.footer ul {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.footer ul li {
+  margin-right: 1.5rem;
+}
+.footer ul li:last-child {
+  margin-right: 0;
+}
+.footer ul li img {
+  width: 2.25rem;
+  height: 2.25rem;
+  vertical-align: bottom;
 }
 /*--服务页面--*/
 .service-header,
