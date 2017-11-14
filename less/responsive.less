@@ -786,6 +786,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .profile{
     padding: 0 2rem;
   }
+
+  .footer{
+    .footer_box{
+      ul{
+        li{
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -1097,6 +1108,72 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width:100%;
       }
       margin-bottom: 1rem;
+    }
+  }
+  //物流配送
+  .dispatching{
+    height: auto;
+    .semicircle{
+      width:560px;
+      height:280px;
+      border-radius: 280px 280px 0 0;
+      .flowPath{
+        &.step1{
+          left: -30px;
+          bottom: 0;
+        }
+        &.step2{
+          left: 2px;
+          bottom: 104px;
+        }
+        &.step3{
+          left: 76px;
+          bottom: 190px;
+        }
+        &.step4{
+          left: 184px;
+          bottom: 240px;
+        }
+        &.step5{
+          right: 184px;
+          bottom: 240px;
+          h3{
+            position: absolute;
+            left: 30px;
+            top: -20px;
+            min-width: 4rem;
+            height: 1rem;
+            line-height: 1rem;
+            margin: 0;
+          }
+        }
+        &.step8{
+          right: -30px;
+          bottom: 0;
+        }
+        &.step7{
+          right: 2px;
+          bottom: 104px;
+        }
+        &.step6{
+          right: 76px;
+          bottom: 190px;
+        }
+      }
+    }
+  }
+  .footer{
+    .footer_box{
+      height: auto;
+      padding: .75rem 0;
+      .box_orient;
+      .flex_direction(column-reverse);
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      ul{
+        margin-bottom: .75rem;
+      }
     }
   }
 }

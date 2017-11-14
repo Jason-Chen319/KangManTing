@@ -974,28 +974,6 @@ input::-webkit-input-placeholder {
 .content-bg {
   background-color: rgba(0, 0, 0, 0.02);
 }
-.test {
-  max-width: 1000px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  height: 100px;
-}
-.test .test1 {
-  /* 2009 spec */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -o-box;
-  /* 混合 */
-  display: -ms-flexbox;
-  /* 新版语法*/
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  border: 1px solid red;
-  padding: 0 100px;
-}
 .formatFile {
   max-width: 72rem;
   margin: 0 auto;
@@ -1189,25 +1167,12 @@ input::-webkit-input-placeholder {
   /*新版本语法*/
   -webkit-justify-content: center;
   justify-content: center;
-  /*垂直居中*/
-  /*老版本语法*/
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  /*混合版本语法*/
-  -ms-flex-align: center;
-  /*新版本语法*/
-  -webkit-align-items: center;
-  align-items: center;
   height: 28.4rem;
   background: #f8f8f8;
-  position: relative;
+  padding: 136px  0 79px 0;
 }
 .dispatching .semicircle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -175px;
-  margin-left: -350px;
+  position: relative;
   width: 700px;
   height: 350px;
   border: 1px solid #ddd;
@@ -1246,30 +1211,69 @@ input::-webkit-input-placeholder {
   display: block;
 }
 .dispatching .semicircle .flowPath.step1 {
-  left: -9.45rem;
+  left: -30px;
   bottom: 0;
 }
 .dispatching .semicircle .flowPath.step2 {
-  left: -164px;
-  bottom: 106px;
+  left: 6px;
+  bottom: 130px;
 }
 .dispatching .semicircle .flowPath.step3 {
-  left: 181.5px;
-  bottom: 212px;
+  left: 100px;
+  bottom: 240px;
 }
 .dispatching .semicircle .flowPath.step4 {
-  left: 248.5px;
-  top: -30px;
+  left: 238px;
+  bottom: 306px;
 }
 .dispatching .semicircle .flowPath.step5 {
-  right: 248.5px;
-  top: -30px;
+  right: 238px;
+  bottom: 306px;
+}
+.dispatching .semicircle .flowPath.step5 h3 {
+  position: absolute;
+  left: 30px;
+  top: -20px;
+  min-width: 4rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+.dispatching .semicircle .flowPath.step8 {
+  right: -30px;
+  bottom: 0;
+}
+.dispatching .semicircle .flowPath.step7 {
+  right: 6px;
+  bottom: 130px;
+}
+.dispatching .semicircle .flowPath.step6 {
+  right: 100px;
+  bottom: 240px;
 }
 .dispatching .semicircle .flowPath h3 {
+  position: absolute;
   font-size: 0.7rem;
   color: #333;
-  line-height: 3.2rem;
-  margin: 0 .5rem;
+  min-width: 7rem;
+}
+.dispatching .semicircle .flowPath h3.ps_l {
+  top: 23px;
+  right: 78px;
+  text-align: right;
+}
+.dispatching .semicircle .flowPath h3.ps_r {
+  top: 23px;
+  left: 78px;
+}
+.dispatching .semicircle .flowPath h3.ps_l_t {
+  right: 30px;
+  top: -30px;
+  text-align: right;
+}
+.dispatching .semicircle .flowPath h3.ps_r_t {
+  left: 30px;
+  top: -30px;
 }
 .dispatching .semicircle .flowPath div {
   position: relative;
@@ -1317,6 +1321,117 @@ input::-webkit-input-placeholder {
   color: #fff;
   font-size: 1rem;
   display: none;
+}
+.clientCase {
+  padding: 0 4rem 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.clientCase .slide {
+  position: relative;
+}
+.clientCase .slide:hover .arrow {
+  display: block;
+}
+.clientCase .slide .arrow {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  height: 5rem;
+  line-height: 5rem;
+  width: 1.5rem;
+  display: none;
+}
+.clientCase .slide .arrow.right {
+  left: initial;
+  right: -2rem;
+}
+.clientCase .slide .arrow.active {
+  opacity: .35;
+}
+.clientCase .slide .arrow span {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+.clientCase .slide ul {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  overflow: hidden;
+}
+.clientCase .slide ul li {
+  margin-right: 1.8rem;
+}
+.clientCase .slide ul li a {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+}
+.clientCase .slide ul li a:hover .mask,
+.clientCase .slide ul li a:hover p {
+  display: block;
+}
+.clientCase .slide ul li a img {
+  width: 6.4rem;
+  height: 5rem;
+}
+.clientCase .slide ul li a .mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .6;
+  display: none;
+}
+.clientCase .slide ul li a p {
+  position: absolute;
+  top: 1.5rem;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding: 0 1rem;
+  color: #fff;
+  text-align: justify;
+  display: none;
+}
+.clientCase .toggle {
+  position: absolute;
+  bottom: -0.35rem;
+  left: 50%;
+  margin-left: -2.1rem;
+  width: 4.2rem;
+}
+.clientCase .toggle span {
+  display: inline-block;
+  width: 1.5rem;
+  border-top: 2px solid #ddd;
+  margin-right: 1.2rem;
+}
+.clientCase .toggle span:last-child {
+  margin-right: 0;
+}
+.clientCase .toggle span.active {
+  border-color: red;
 }
 .subnav {
   max-width: 58rem;
@@ -1748,6 +1863,9 @@ input::-webkit-input-placeholder {
   bottom: 1rem;
 }
 .footer {
+  background: #f8f8f8;
+}
+.footer .footer_box {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1778,22 +1896,21 @@ input::-webkit-input-placeholder {
   /*新版本语法*/
   -webkit-align-items: center;
   align-items: center;
+  margin: 0 4rem;
   height: 6.7rem;
-  background: #f8f8f8;
-  padding: 0 4rem;
 }
-.footer p {
+.footer .footer_box p {
   font-size: 0.6rem;
   color: #666;
   margin-bottom: .75rem;
 }
-.footer p:last-child {
+.footer .footer_box p:last-child {
   margin-bottom: 0;
 }
-.footer p span {
+.footer .footer_box p span {
   margin-right: 1rem;
 }
-.footer ul {
+.footer .footer_box ul {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1807,13 +1924,13 @@ input::-webkit-input-placeholder {
   display: -o-flex;
   display: flex;
 }
-.footer ul li {
+.footer .footer_box ul li {
   margin-right: 1.5rem;
 }
-.footer ul li:last-child {
+.footer .footer_box ul li:last-child {
   margin-right: 0;
 }
-.footer ul li img {
+.footer .footer_box ul li img {
   width: 2.25rem;
   height: 2.25rem;
   vertical-align: bottom;
