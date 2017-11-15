@@ -291,48 +291,51 @@
 
 //解决方案
 .solution{
-  .display;
   //flex-wrap: wrap;
   height: 25rem;
   background: #f8f8f8;
   padding: 3.475rem 4rem;
-  .solution-l{
-    flex: 1 0 auto;
-    width: 27.6rem;
-    margin-right: 2rem;
-    img{
-      vertical-align: bottom;
-      float:left;
-    }
-    .bgImg{
-      width:100%;
-      height: 12.55rem;
-    }
-    .smImg{
-      width: 33.33333333329%;
-      height: 5.5rem;
-    }
+  .solution_box{
+    .display;
+    .solution-l{
+      flex: 1 0 auto;
+      width: 27.6rem;
+      margin-right: 2rem;
+      img{
+        vertical-align: bottom;
+        float:left;
+      }
+      .bgImg{
+        width:100%;
+        height: 12.55rem;
+      }
+      .smImg{
+        width: 33.33333333329%;
+        height: 5.5rem;
+      }
 
-  }
-  .solution-r{
-    .st_tit{
-      font-size: 1.2rem;
-      color: #333;
-      line-height: 1.8rem;
     }
-    .st_subTit{
-      font-size: .7rem;
-      color: #333;
-    }
-    p{
-      font-size: .7rem;
-      color: #999;
-      margin: .4rem 0 2rem 0;
-      &:last-child{
-        margin-bottom: 0;
+    .solution-r{
+      .st_tit{
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.8rem;
+      }
+      .st_subTit{
+        font-size: .7rem;
+        color: #333;
+      }
+      p{
+        font-size: .7rem;
+        color: #999;
+        margin: .4rem 0 1.6rem 0;
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
   }
+
 }
 //公司简介
 .profile{
@@ -377,28 +380,32 @@
   height: 28.4rem;
   background: #f8f8f8;
   //position: relative;
-  padding:136px  0 79px 0;
+  padding:6.8rem  0 3.95rem 0;
   .semicircle{
     position: relative;
     //top:50%;
     //left:50%;
     //margin-top: -175px;
     //margin-left: -350px;
-    width:700px;
-    height:350px;
+    width: 35rem;
+    height: 17.5rem;
     border:1px solid #ddd;
     border-bottom-color: transparent;
-    border-radius: 350px 350px 0 0;
+    border-radius: 17.5rem 17.5rem 0 0;
     .innerImg{
       position: absolute;
       bottom: 0;
       left: 50%;
-      width: 203px;
-      height:140px;
-      margin-left: -101.5px;
+      width: 10.15rem;
+      height: 7rem;
+      margin-left: -5.075rem;
       img{
         width: 100%;
         height: 100%;
+        vertical-align: bottom;
+        &.secondImg{
+          display: none;
+        }
       }
     }
     .flowPath{
@@ -410,45 +417,36 @@
         }
       }
       &.step1{
-        left: -30px;
+        left: -1.5rem;
         bottom: 0;
       }
       &.step2{
-        left: 6px;
-        bottom: 130px;
+        left: .3rem;
+        bottom: 6.5rem;
       }
       &.step3{
-         left: 100px;
-         bottom: 240px;
+         left: 5rem;
+         bottom: 12rem;
        }
       &.step4{
-        left: 238px;
-        bottom: 306px;
+        left: 11.9rem;
+        bottom: 15.3rem;
       }
       &.step5{
-        right: 238px;
-        bottom: 306px;
-        h3{
-          position: absolute;
-          left: 30px;
-          top: -20px;
-          min-width: 4rem;
-          height: 1rem;
-          line-height: 1rem;
-          margin: 0;
-        }
-      }
-      &.step8{
-        right: -30px;
-        bottom: 0;
-      }
-      &.step7{
-        right: 6px;
-        bottom: 130px;
+        right: 11.9rem;
+        bottom: 15.3rem;
       }
       &.step6{
-        right: 100px;
-        bottom: 240px;
+        right: 5rem;
+        bottom: 12rem;
+      }
+      &.step7{
+        right: .3rem;
+        bottom: 6.5rem;
+      }
+      &.step8{
+        right: -1.5rem;
+        bottom: 0;
       }
       h3{
         position: absolute;
@@ -456,22 +454,22 @@
         color: #333;
         min-width:7rem;
         &.ps_l{
-          top: 23px;
-          right: 78px;
+          top: 1.15rem;
+          right: 3.9rem;
           text-align: right;
         }
         &.ps_r{
-          top: 23px;
-          left: 78px;
+          top: 1.15rem;
+          left: 3.9rem;
         }
         &.ps_l_t{
-          right: 30px;
-          top: -30px;
+          right: 1.5rem;
+          top: -1.5rem;
           text-align: right;
         }
         &.ps_r_t{
-          left: 30px;
-          top: -30px;
+          left: 1.5rem;
+          top: -1.5rem;
         }
       }
       div{
@@ -510,7 +508,6 @@
           display: none;
         }
       }
-
     }
   }
 }

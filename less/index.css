@@ -1056,6 +1056,11 @@ input::-webkit-input-placeholder {
   text-overflow: ellipsis;
 }
 .solution {
+  height: 25rem;
+  background: #f8f8f8;
+  padding: 3.475rem 4rem;
+}
+.solution .solution_box {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1068,42 +1073,39 @@ input::-webkit-input-placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  height: 25rem;
-  background: #f8f8f8;
-  padding: 3.475rem 4rem;
 }
-.solution .solution-l {
+.solution .solution_box .solution-l {
   flex: 1 0 auto;
   width: 27.6rem;
   margin-right: 2rem;
 }
-.solution .solution-l img {
+.solution .solution_box .solution-l img {
   vertical-align: bottom;
   float: left;
 }
-.solution .solution-l .bgImg {
+.solution .solution_box .solution-l .bgImg {
   width: 100%;
   height: 12.55rem;
 }
-.solution .solution-l .smImg {
+.solution .solution_box .solution-l .smImg {
   width: 33.33333333329%;
   height: 5.5rem;
 }
-.solution .solution-r .st_tit {
+.solution .solution_box .solution-r .st_tit {
   font-size: 1.2rem;
   color: #333;
   line-height: 1.8rem;
 }
-.solution .solution-r .st_subTit {
+.solution .solution_box .solution-r .st_subTit {
   font-size: .7rem;
   color: #333;
 }
-.solution .solution-r p {
+.solution .solution_box .solution-r p {
   font-size: .7rem;
   color: #999;
-  margin: .4rem 0 2rem 0;
+  margin: .4rem 0 1.6rem 0;
 }
-.solution .solution-r p:last-child {
+.solution .solution_box .solution-r p:last-child {
   margin-bottom: 0;
 }
 .profile {
@@ -1169,27 +1171,31 @@ input::-webkit-input-placeholder {
   justify-content: center;
   height: 28.4rem;
   background: #f8f8f8;
-  padding: 136px  0 79px 0;
+  padding: 6.8rem  0 3.95rem 0;
 }
 .dispatching .semicircle {
   position: relative;
-  width: 700px;
-  height: 350px;
+  width: 35rem;
+  height: 17.5rem;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
-  border-radius: 350px 350px 0 0;
+  border-radius: 17.5rem 17.5rem 0 0;
 }
 .dispatching .semicircle .innerImg {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 203px;
-  height: 140px;
-  margin-left: -101.5px;
+  width: 10.15rem;
+  height: 7rem;
+  margin-left: -5.075rem;
 }
 .dispatching .semicircle .innerImg img {
   width: 100%;
   height: 100%;
+  vertical-align: bottom;
+}
+.dispatching .semicircle .innerImg img.secondImg {
+  display: none;
 }
 .dispatching .semicircle .flowPath {
   /* 2009 spec */
@@ -1211,45 +1217,36 @@ input::-webkit-input-placeholder {
   display: block;
 }
 .dispatching .semicircle .flowPath.step1 {
-  left: -30px;
+  left: -1.5rem;
   bottom: 0;
 }
 .dispatching .semicircle .flowPath.step2 {
-  left: 6px;
-  bottom: 130px;
+  left: .3rem;
+  bottom: 6.5rem;
 }
 .dispatching .semicircle .flowPath.step3 {
-  left: 100px;
-  bottom: 240px;
+  left: 5rem;
+  bottom: 12rem;
 }
 .dispatching .semicircle .flowPath.step4 {
-  left: 238px;
-  bottom: 306px;
+  left: 11.9rem;
+  bottom: 15.3rem;
 }
 .dispatching .semicircle .flowPath.step5 {
-  right: 238px;
-  bottom: 306px;
-}
-.dispatching .semicircle .flowPath.step5 h3 {
-  position: absolute;
-  left: 30px;
-  top: -20px;
-  min-width: 4rem;
-  height: 1rem;
-  line-height: 1rem;
-  margin: 0;
-}
-.dispatching .semicircle .flowPath.step8 {
-  right: -30px;
-  bottom: 0;
-}
-.dispatching .semicircle .flowPath.step7 {
-  right: 6px;
-  bottom: 130px;
+  right: 11.9rem;
+  bottom: 15.3rem;
 }
 .dispatching .semicircle .flowPath.step6 {
-  right: 100px;
-  bottom: 240px;
+  right: 5rem;
+  bottom: 12rem;
+}
+.dispatching .semicircle .flowPath.step7 {
+  right: .3rem;
+  bottom: 6.5rem;
+}
+.dispatching .semicircle .flowPath.step8 {
+  right: -1.5rem;
+  bottom: 0;
 }
 .dispatching .semicircle .flowPath h3 {
   position: absolute;
@@ -1258,22 +1255,22 @@ input::-webkit-input-placeholder {
   min-width: 7rem;
 }
 .dispatching .semicircle .flowPath h3.ps_l {
-  top: 23px;
-  right: 78px;
+  top: 1.15rem;
+  right: 3.9rem;
   text-align: right;
 }
 .dispatching .semicircle .flowPath h3.ps_r {
-  top: 23px;
-  left: 78px;
+  top: 1.15rem;
+  left: 3.9rem;
 }
 .dispatching .semicircle .flowPath h3.ps_l_t {
-  right: 30px;
-  top: -30px;
+  right: 1.5rem;
+  top: -1.5rem;
   text-align: right;
 }
 .dispatching .semicircle .flowPath h3.ps_r_t {
-  left: 30px;
-  top: -30px;
+  left: 1.5rem;
+  top: -1.5rem;
 }
 .dispatching .semicircle .flowPath div {
   position: relative;

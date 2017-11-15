@@ -60,6 +60,39 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /*-- 自适应分辨率 ------------------------------------------*/
+@media only screen and (max-width: 600px){
+  //图文
+  .formatFile{
+    ul{
+      flex-wrap: wrap;
+      //padding:0;
+      //width: 90%;
+      margin: 0 auto;
+      li{
+        .justify_content_center;
+        width: 50%;
+        margin-bottom: 3rem;
+        &:nth-child(n+5){
+          margin-bottom: 3rem;
+        }
+        &:nth-child(n+7){
+          margin-bottom: 2rem;
+        }
+        div{
+          width: 5rem;
+          height: 7rem;
+          &:hover{
+            .mask, p{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 18px;
@@ -747,44 +780,33 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 1rem;
   }
 
-  //图文
-  .formatFile{
-    ul{
-      flex-wrap: wrap;
-      padding:0;
-      li{
-        .justify_content_center;
-        width: 25%;
-        margin-bottom: 3rem;
-        &:nth-child(n+5){
-          margin-bottom: 2rem;
-        }
-        div{
-          width: 5rem;
-          height: 7rem;
-          &:hover{
-            .mask, p{
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
 
+
+  //解决方案
   .solution{
-    padding: 1.5rem 2rem;
-    .solution-l{
-    }
-    .solution-r{
-      p{
+    height: auto;
+    padding: 2rem 0;
+    .solution_box{
+      width: 90%;
+      margin: 0 auto;
+      .box_orient;
+      .flex_direction(column );
+      .solution-l{
+        width: 100%;
         margin-bottom: 1rem;
       }
+      .solution-r{
+      }
     }
   }
 
+
+  //公司简介
   .profile{
-    padding: 0 2rem;
+    //padding: 0 2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding:0;
   }
 
   .footer{
@@ -797,6 +819,116 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
+  //物流配送
+  .dispatching{
+    height: 38.2rem;
+    padding: 2rem 0;
+    .semicircle{
+      width: 80%;
+      height: 34.2rem;
+      border: 0;
+      border-left:1px solid #ddd;
+      margin-left: 1.7rem;
+      //border-bottom-color: transparent;
+      border-radius:0;
+      .innerImg{
+        display: none;
+        bottom: 0;
+        left: inherit;
+        right: 0;
+        width: 50%;
+        height:100%;
+        //margin-left: -101.5px;
+        img{
+          width: 100%;
+          height: 50%;
+          &.secondImg{
+            display: block;
+          }
+        }
+      }
+      .flowPath{
+        //.display;
+        //position: absolute;
+        //&:hover{
+        //  p, span{
+        //    display: block;
+        //  }
+        //}
+        &.step1{
+          left: -1.7rem;
+          top: 0;
+          bottom: inherit;
+        }
+        &.step2{
+          left: -1.7rem;
+          top: 4.4rem;
+          bottom: inherit;
+        }
+        &.step3{
+          left: -1.7rem;
+          top: 8.8rem;
+          bottom: inherit;
+        }
+        &.step4{
+          left: -1.7rem;
+          top: 13.2rem;
+          bottom: inherit;
+        }
+        &.step5{
+          left: -1.7rem;
+          top: 17.6rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step6{
+          left: -1.7rem;
+          top: 22rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step7{
+          left: -1.7rem;
+          top: 26.4rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step8{
+          left: -1.7rem;
+          top: 30.8rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        h3{
+          //position: absolute;
+          //font-size: @font14;
+          //color: #333;
+          //min-width:7rem;
+          margin-left: 2rem;
+          &.ps_l{
+            //top: 23px;
+            right: inherit;
+            left: 4.4rem;
+            text-align: left;
+          }
+          &.ps_r{
+            //top: 23px;
+            left: 4.4rem;
+          }
+          &.ps_l_t{
+            top: 1.15rem;
+            right: inherit;
+            left: 4.4rem;
+            text-align: left;
+          }
+          &.ps_r_t{
+            left: 4.4rem;
+            top: 1.15rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -820,7 +952,32 @@ and (-webkit-min-device-pixel-ratio: 2) {
       }
     }
   }
-
+  //图文
+  .formatFile{
+    ul{
+      flex-wrap: wrap;
+      padding:0;
+      //width: 90%;
+      margin: 0 auto;
+      li{
+        .justify_content_center;
+        width: 25%;
+        margin-bottom: 3rem;
+        &:nth-child(n+5){
+          margin-bottom: 2rem;
+        }
+        div{
+          width: 5rem;
+          height: 7rem;
+          &:hover{
+            .mask, p{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -948,6 +1105,114 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
+  //物流配送
+  .dispatching{
+    height: 38.2rem;
+    padding: 2rem 0;
+    .semicircle{
+      width: 80%;
+      height: 34.2rem;
+      border: 0;
+      border-left:1px solid #ddd;
+      margin-left: 1.7rem;
+      //border-bottom-color: transparent;
+      border-radius:0;
+      .innerImg{
+        bottom: 0;
+        left: inherit;
+        right: 0;
+        width: 60%;
+        height:100%;
+        //margin-left: -101.5px;
+        img{
+          width: 100%;
+          height: 50%;
+          &.secondImg{
+            display: block;
+          }
+        }
+      }
+      .flowPath{
+        //.display;
+        //position: absolute;
+        //&:hover{
+        //  p, span{
+        //    display: block;
+        //  }
+        //}
+        &.step1{
+          left: -1.7rem;
+          top: 0;
+          bottom: inherit;
+        }
+        &.step2{
+          left: -1.7rem;
+          top: 4.4rem;
+          bottom: inherit;
+        }
+        &.step3{
+          left: -1.7rem;
+          top: 8.8rem;
+          bottom: inherit;
+        }
+        &.step4{
+          left: -1.7rem;
+          top: 13.2rem;
+          bottom: inherit;
+        }
+        &.step5{
+          left: -1.7rem;
+          top: 17.6rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step6{
+          left: -1.7rem;
+          top: 22rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step7{
+          left: -1.7rem;
+          top: 26.4rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        &.step8{
+          left: -1.7rem;
+          top: 30.8rem;
+          right: inherit;
+          bottom: inherit;
+        }
+        h3{
+          //position: absolute;
+          //font-size: @font14;
+          //color: #333;
+          //min-width:7rem;
+          &.ps_l{
+            //top: 23px;
+            right: inherit;
+            left: 4.4rem;
+            text-align: left;
+          }
+          &.ps_r{
+            //top: 23px;
+            left: 4.4rem;
+          }
+          &.ps_l_t{
+            top: 1.15rem;
+            right: inherit;
+            left: 4.4rem;
+            text-align: left;
+          }
+          &.ps_r_t{
+            left: 4.4rem;
+            top: 1.15rem;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .smartfarm-header .slide-1-info {
@@ -1095,6 +1360,69 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1279px){
+  .solution{
+    height: auto;
+    .solution_box{
+      .box_orient;
+      .flex_direction(column );
+      .solution-l{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      .solution-r{
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+  //物流配送
+  .dispatching{
+    height: auto;
+    .semicircle{
+      width: 28rem;
+      height: 14rem;
+      border-radius: 14rem 14rem 0 0;
+      .flowPath{
+        &.step1{
+          left: -1.5rem;
+          bottom: 0;
+        }
+        &.step2{
+          left: .1rem;
+          bottom: 5.2rem;
+        }
+        &.step3{
+          left: 3.8rem;
+          bottom: 9.5rem;
+        }
+        &.step4{
+          left: 9.2rem;
+          bottom: 12rem;
+        }
+        &.step5{
+          right: 9.2rem;
+          bottom: 12rem;
+        }
+        &.step6{
+          right: 3.8rem;
+          bottom: 9.5rem;
+        }
+        &.step7{
+          right: .1rem;
+          bottom: 5.2rem;
+        }
+        &.step8{
+          right: -1.5rem;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1279px){
   .profile{
     .box_orient;
@@ -1110,62 +1438,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
       margin-bottom: 1rem;
     }
   }
-  //物流配送
-  .dispatching{
-    height: auto;
-    .semicircle{
-      width:560px;
-      height:280px;
-      border-radius: 280px 280px 0 0;
-      .flowPath{
-        &.step1{
-          left: -30px;
-          bottom: 0;
-        }
-        &.step2{
-          left: 2px;
-          bottom: 104px;
-        }
-        &.step3{
-          left: 76px;
-          bottom: 190px;
-        }
-        &.step4{
-          left: 184px;
-          bottom: 240px;
-        }
-        &.step5{
-          right: 184px;
-          bottom: 240px;
-          h3{
-            position: absolute;
-            left: 30px;
-            top: -20px;
-            min-width: 4rem;
-            height: 1rem;
-            line-height: 1rem;
-            margin: 0;
-          }
-        }
-        &.step8{
-          right: -30px;
-          bottom: 0;
-        }
-        &.step7{
-          right: 2px;
-          bottom: 104px;
-        }
-        &.step6{
-          right: 76px;
-          bottom: 190px;
-        }
-      }
-    }
-  }
+
   .footer{
     .footer_box{
       height: auto;
-      padding: .75rem 0;
+      padding: 1.5rem 0;
       .box_orient;
       .flex_direction(column-reverse);
       text-align: center;
@@ -1244,20 +1521,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen and (max-width: 1365px){
-  .solution{
-    height: auto;
-    .box_orient;
-    .flex_direction(column );
-    .solution-l{
-      width: 100%;
-      margin-bottom: 1rem;
-
-    }
-    .solution-r{
-    }
-  }
-}
+//@media only screen and (max-width: 1365px){
+//}
 
 @media only screen and (min-width: 768px) and (max-width: 1439px){
   html {

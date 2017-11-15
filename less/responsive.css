@@ -106,6 +106,39 @@ html {
   }
 }
 /*-- 自适应分辨率 ------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  .formatFile ul {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .formatFile ul li {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    /*混合版本语法*/
+    -ms-flex-pack: center;
+    /*新版本语法*/
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+5) {
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+7) {
+    margin-bottom: 2rem;
+  }
+  .formatFile ul li div {
+    width: 5rem;
+    height: 7rem;
+  }
+  .formatFile ul li div:hover .mask,
+  .formatFile ul li div:hover p {
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
   html {
     font-size: 18px;
@@ -723,9 +756,146 @@ html {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 1rem;
   }
+  .solution {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .solution .solution_box {
+    width: 90%;
+    margin: 0 auto;
+    /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .solution .solution_box .solution-l {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .profile {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer .footer_box ul li {
+    margin-right: .5rem;
+  }
+  .dispatching {
+    height: 38.2rem;
+    padding: 2rem 0;
+  }
+  .dispatching .semicircle {
+    width: 80%;
+    height: 34.2rem;
+    border: 0;
+    border-left: 1px solid #ddd;
+    margin-left: 1.7rem;
+    border-radius: 0;
+  }
+  .dispatching .semicircle .innerImg {
+    display: none;
+    bottom: 0;
+    left: inherit;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .dispatching .semicircle .innerImg img {
+    width: 100%;
+    height: 50%;
+  }
+  .dispatching .semicircle .innerImg img.secondImg {
+    display: block;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: -1.7rem;
+    top: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: -1.7rem;
+    top: 4.4rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: -1.7rem;
+    top: 8.8rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: -1.7rem;
+    top: 13.2rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    left: -1.7rem;
+    top: 17.6rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    left: -1.7rem;
+    top: 22rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    left: -1.7rem;
+    top: 26.4rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    left: -1.7rem;
+    top: 30.8rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath h3 {
+    margin-left: 2rem;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l {
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r {
+    left: 4.4rem;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l_t {
+    top: 1.15rem;
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r_t {
+    left: 4.4rem;
+    top: 1.15rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  html {
+    font-size: 20px;
+  }
+  .login-container .loginbox {
+    left: 5%;
+    right: 5%;
+  }
+  .login-container .loginbox .loginwrap {
+    width: 80%;
+  }
+  .login-container .loginbox .loginwrap li .urlbox input {
+    width: 30%;
+  }
   .formatFile ul {
     flex-wrap: wrap;
     padding: 0;
+    margin: 0 auto;
   }
   .formatFile ul li {
     /*水平居中*/
@@ -750,33 +920,6 @@ html {
   .formatFile ul li div:hover .mask,
   .formatFile ul li div:hover p {
     display: none;
-  }
-  .solution {
-    padding: 1.5rem 2rem;
-  }
-  .solution .solution-r p {
-    margin-bottom: 1rem;
-  }
-  .profile {
-    padding: 0 2rem;
-  }
-  .footer .footer_box ul li {
-    margin-right: .5rem;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  html {
-    font-size: 20px;
-  }
-  .login-container .loginbox {
-    left: 5%;
-    right: 5%;
-  }
-  .login-container .loginbox .loginwrap {
-    width: 80%;
-  }
-  .login-container .loginbox .loginwrap li .urlbox input {
-    width: 30%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -884,6 +1027,94 @@ html {
     width: 100%;
     margin-top: 1.5rem;
     border-top: 1px solid #fafafa;
+  }
+  .dispatching {
+    height: 38.2rem;
+    padding: 2rem 0;
+  }
+  .dispatching .semicircle {
+    width: 80%;
+    height: 34.2rem;
+    border: 0;
+    border-left: 1px solid #ddd;
+    margin-left: 1.7rem;
+    border-radius: 0;
+  }
+  .dispatching .semicircle .innerImg {
+    bottom: 0;
+    left: inherit;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+  .dispatching .semicircle .innerImg img {
+    width: 100%;
+    height: 50%;
+  }
+  .dispatching .semicircle .innerImg img.secondImg {
+    display: block;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: -1.7rem;
+    top: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: -1.7rem;
+    top: 4.4rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: -1.7rem;
+    top: 8.8rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: -1.7rem;
+    top: 13.2rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    left: -1.7rem;
+    top: 17.6rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    left: -1.7rem;
+    top: 22rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    left: -1.7rem;
+    top: 26.4rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    left: -1.7rem;
+    top: 30.8rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l {
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r {
+    left: 4.4rem;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l_t {
+    top: 1.15rem;
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r_t {
+    left: 4.4rem;
+    top: 1.15rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -1005,6 +1236,68 @@ html {
     background-size: 150%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .solution {
+    height: auto;
+  }
+  .solution .solution_box {
+    /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .solution .solution_box .solution-l {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .dispatching {
+    height: auto;
+  }
+  .dispatching .semicircle {
+    width: 28rem;
+    height: 14rem;
+    border-radius: 14rem 14rem 0 0;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: -1.5rem;
+    bottom: 0;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: .1rem;
+    bottom: 5.2rem;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: 3.8rem;
+    bottom: 9.5rem;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: 9.2rem;
+    bottom: 12rem;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    right: 9.2rem;
+    bottom: 12rem;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    right: 3.8rem;
+    bottom: 9.5rem;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    right: .1rem;
+    bottom: 5.2rem;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    right: -1.5rem;
+    bottom: 0;
+  }
+}
 @media only screen and (max-width: 1279px) {
   .profile {
     /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
@@ -1027,58 +1320,9 @@ html {
   .profile .profile_r img {
     width: 100%;
   }
-  .dispatching {
-    height: auto;
-  }
-  .dispatching .semicircle {
-    width: 560px;
-    height: 280px;
-    border-radius: 280px 280px 0 0;
-  }
-  .dispatching .semicircle .flowPath.step1 {
-    left: -30px;
-    bottom: 0;
-  }
-  .dispatching .semicircle .flowPath.step2 {
-    left: 2px;
-    bottom: 104px;
-  }
-  .dispatching .semicircle .flowPath.step3 {
-    left: 76px;
-    bottom: 190px;
-  }
-  .dispatching .semicircle .flowPath.step4 {
-    left: 184px;
-    bottom: 240px;
-  }
-  .dispatching .semicircle .flowPath.step5 {
-    right: 184px;
-    bottom: 240px;
-  }
-  .dispatching .semicircle .flowPath.step5 h3 {
-    position: absolute;
-    left: 30px;
-    top: -20px;
-    min-width: 4rem;
-    height: 1rem;
-    line-height: 1rem;
-    margin: 0;
-  }
-  .dispatching .semicircle .flowPath.step8 {
-    right: -30px;
-    bottom: 0;
-  }
-  .dispatching .semicircle .flowPath.step7 {
-    right: 2px;
-    bottom: 104px;
-  }
-  .dispatching .semicircle .flowPath.step6 {
-    right: 76px;
-    bottom: 190px;
-  }
   .footer .footer_box {
     height: auto;
-    padding: .75rem 0;
+    padding: 1.5rem 0;
     /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
@@ -1152,24 +1396,6 @@ html {
   .farm-list.sfarm-other {
     padding-bottom: 27rem;
     background-size: 150%;
-  }
-}
-@media only screen and (max-width: 1365px) {
-  .solution {
-    height: auto;
-    /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .solution .solution-l {
-    width: 100%;
-    margin-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
