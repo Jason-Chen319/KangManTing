@@ -111,7 +111,7 @@
 
   .head-background {
     width: @width;
-    height: @height;
+    //height: @height;
     position: absolute;
     width: @width;
     left: 0;
@@ -264,7 +264,7 @@
           height:100%;
           font-size: @font14;
           line-height: 1rem;
-          padding: 1rem;
+          padding: .7rem;
           color: #fff;
           text-align: justify;
           display: none;
@@ -354,7 +354,7 @@
       font-size: @font14;
       color: #999;
       text-align: right;
-      span{
+      a{
         display: inline-block;
         padding: .1rem 1rem;
         //line-height: 1.2rem;
@@ -1616,6 +1616,9 @@
   .slide-1-info{
     margin-top: -2rem;
   }
+  .head-background-layer, .head-background{
+    top: 4rem;
+  }
 }
 .intro{
   max-width: 55rem;
@@ -1625,8 +1628,14 @@
   color: lighten(@color-c000, 40%);
   font-weight: 400;
   line-height: 1.6rem;
+  text-indent: 1.4rem;
+  span{
+    color: @color-cgreen;
+    font-weight: bold;
+  }
   img{
     width: 100%;
+    vertical-align: bottom;
   }
   &.news-detail{
     img{
