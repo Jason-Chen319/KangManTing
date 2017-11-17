@@ -107,39 +107,6 @@ html {
 }
 /*-- 自适应分辨率 ------------------------------------------*/
 @media only screen and (max-width: 600px) {
-  .formatFile ul {
-    flex-wrap: wrap;
-    padding: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .formatFile ul li {
-    /*水平居中*/
-    /*老版本语法*/
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    /*混合版本语法*/
-    -ms-flex-pack: center;
-    /*新版本语法*/
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: 50%;
-    margin-bottom: 3rem;
-  }
-  .formatFile ul li:nth-child(n+5) {
-    margin-bottom: 3rem;
-  }
-  .formatFile ul li:nth-child(n+7) {
-    margin-bottom: 2rem;
-  }
-  .formatFile ul li div {
-    width: 5rem;
-    height: 7rem;
-  }
-  .formatFile ul li div:hover .mask,
-  .formatFile ul li div:hover p {
-    display: none;
-  }
 }
 @media only screen and (max-width: 767px) {
   html {
@@ -551,36 +518,6 @@ html {
   .app-down-container .app-down-content dl:after {
     display: none;
   }
-  footer .footernavbox {
-    padding: 0;
-    flex-direction: column;
-  }
-  footer .footernavbox dl {
-    position: relative;
-    overflow: hidden;
-    padding: .5rem 1rem;
-    padding-left: 5rem;
-    line-height: 1.5rem;
-  }
-  footer .footernavbox dl dt {
-    position: absolute;
-    left: 1rem;
-    top: .6rem;
-    width: 2rem;
-  }
-  footer .footernavbox dl dd {
-    width: 33.33333333329%;
-    float: left;
-  }
-  footer .footernavbox dl:nth-child(4) dd {
-    width: 100%;
-  }
-  footer .footernavbox dl:nth-child(odd) {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  footer .footernavbox .code {
-    margin: 2rem auto;
-  }
   .fonts {
     font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
@@ -590,41 +527,15 @@ html {
     bottom: 2rem;
     height: auto;
   }
-  .service-header .head-background {
-    zoom: 1 !important;
-    background-size: 202% !important;
-    background-position: center bottom !important;
-    background-color: #eef1f6 !important;
-  }
-  .service-header .head-info {
-    position: absolute;
-    z-index: 1000;
-  }
-  .service-header .head-info button {
-    margin: 4rem auto 0 auto;
-    margin-top: 3rem;
-    display: block;
-  }
-  .service-header .head-info button:last-child {
-    padding: 0;
-    background: transparent;
-    color: #000000;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-  }
-  .service-header .head-info button:last-child:hover,
-  .service-header .head-info button:last-child:active {
-    background: transparent;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .service-header .slide-1-info {
-    margin-top: 3rem;
-  }
   .service-content {
     padding: 0;
-    height: 100%;
+    height: 84%;
   }
   .service-content i {
+    flex: inherit;
+    margin-top: 1rem;
+  }
+  .service-content p {
     flex: inherit;
     margin-top: 1rem;
   }
@@ -651,7 +562,7 @@ html {
     padding: 0;
     position: relative;
   }
-  .service-content.service-r .service-content-box i {
+  .service-content.service-r .service-content-box p {
     position: absolute;
     top: 0;
     width: 100%;
@@ -661,7 +572,7 @@ html {
     text-align: center;
     font-size: 0.7rem;
     position: absolute;
-    top: 7.3rem;
+    top: 11rem;
     width: 100%;
   }
   .service-content.service-r .service-content-box section:nth-child(2) h4 {
@@ -758,6 +669,44 @@ html {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 1rem;
   }
+  .formatFile {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .formatFile ul {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+  }
+  .formatFile ul.formatFile_r li:nth-child(n+3) {
+    margin-bottom: 2rem;
+  }
+  .formatFile ul li {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    /*混合版本语法*/
+    -ms-flex-pack: center;
+    /*新版本语法*/
+    -webkit-justify-content: flex-center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 50%;
+  }
+  .formatFile ul li a {
+    width: 6rem;
+    height: 8rem;
+  }
+  .formatFile ul li a:hover .mask,
+  .formatFile ul li a:hover p {
+    display: none;
+  }
   .solution {
     height: auto;
     padding: 2rem 0;
@@ -784,7 +733,7 @@ html {
     margin: 0 auto;
     padding: 0;
   }
-  .footer .footer_box ul li {
+  footer .footer_box ul li {
     margin-right: .5rem;
   }
   .dispatching {
@@ -894,35 +843,6 @@ html {
   .login-container .loginbox .loginwrap li .urlbox input {
     width: 30%;
   }
-  .formatFile ul {
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .formatFile ul li {
-    /*水平居中*/
-    /*老版本语法*/
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    /*混合版本语法*/
-    -ms-flex-pack: center;
-    /*新版本语法*/
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: 25%;
-    margin-bottom: 3rem;
-  }
-  .formatFile ul li:nth-child(n+5) {
-    margin-bottom: 2rem;
-  }
-  .formatFile ul li div {
-    width: 5rem;
-    height: 7rem;
-  }
-  .formatFile ul li div:hover .mask,
-  .formatFile ul li div:hover p {
-    display: none;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   html {
@@ -994,14 +914,6 @@ html {
   }
   .applybox ul li i {
     vertical-align: top;
-  }
-  footer .footernavbox {
-    padding: 2rem 3rem;
-  }
-  footer .footernavbox .code {
-    width: 7rem;
-    height: 7rem;
-    display: none;
   }
   .login-container .loginbox {
     left: 12%;
@@ -1159,6 +1071,43 @@ html {
   .farm-list.sfarm-other {
     padding-bottom: 16rem;
     background-size: 150%;
+  }
+  .formatFile {
+    flex-wrap: wrap;
+  }
+  .formatFile ul {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .formatFile ul li {
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+5) {
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+7) {
+    margin-bottom: 2rem;
+  }
+  .formatFile ul li a {
+    width: 6rem;
+    height: 8rem;
+  }
+  .formatFile ul li a:hover p {
+    font-size: 0.6rem;
+    padding: .3rem;
+    line-height: .8rem;
   }
 }
 @media only screen and (width: 768px) {
@@ -1322,7 +1271,7 @@ html {
   .profile .profile_r img {
     width: 100%;
   }
-  .footer .footer_box {
+  footer .footer_box {
     height: auto;
     padding: 1.5rem 0;
     /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
@@ -1338,7 +1287,7 @@ html {
     width: 80%;
     margin: 0 auto;
   }
-  .footer .footer_box ul {
+  footer .footer_box ul {
     margin-bottom: .75rem;
   }
 }
@@ -1400,25 +1349,30 @@ html {
     background-size: 150%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
+@media only screen and (min-width: 960px) and (max-width: 1439px) {
   html {
     font-size: 20px;
   }
-  .formatFile ul {
+  .formatFile {
     flex-wrap: wrap;
-    padding: 0;
   }
-  .formatFile ul li {
+  .formatFile ul {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     /*水平居中*/
     /*老版本语法*/
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
     /*混合版本语法*/
-    -ms-flex-pack: center;
+    -ms-flex-pack: space-between;
     /*新版本语法*/
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: 25%;
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .formatFile ul li {
     margin-bottom: 3rem;
   }
   .formatFile ul li:nth-child(n+5) {

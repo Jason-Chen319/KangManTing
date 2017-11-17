@@ -180,6 +180,9 @@ input::-webkit-input-placeholder {
 .text-center {
   text-align: center;
 }
+img {
+  vertical-align: bottom;
+}
 #__bs_notify__ {
   display: none !important;
 }
@@ -976,6 +979,19 @@ input::-webkit-input-placeholder {
 .formatFile {
   max-width: 72rem;
   margin: 0 auto;
+  padding: 0 4rem;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 .formatFile ul {
   /* 2009 spec */
@@ -990,7 +1006,6 @@ input::-webkit-input-placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  padding: 0 4rem;
 }
 .formatFile ul li {
   /* 2009 spec */
@@ -1007,21 +1022,33 @@ input::-webkit-input-placeholder {
   display: flex;
   margin-bottom: 2rem;
 }
-.formatFile ul li div {
+.formatFile ul li a {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
   width: 8rem;
   height: 10rem;
   position: relative;
 }
-.formatFile ul li div:hover .mask,
-.formatFile ul li div:hover p {
+.formatFile ul li a:hover .mask,
+.formatFile ul li a:hover p {
   display: block;
 }
-.formatFile ul li div img {
+.formatFile ul li a img {
   width: 100%;
   height: 100%;
   vertical-align: bottom;
 }
-.formatFile ul li div div.mask {
+.formatFile ul li a div.mask {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1030,7 +1057,7 @@ input::-webkit-input-placeholder {
   opacity: .6;
   display: none;
 }
-.formatFile ul li div p {
+.formatFile ul li a p {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1041,9 +1068,8 @@ input::-webkit-input-placeholder {
   color: #fff;
   text-align: justify;
   display: none;
-  text-overflow: ellipsis;
 }
-.formatFile ul li div h2 {
+.formatFile ul li a h2 {
   position: absolute;
   bottom: -2rem;
   width: 100%;
@@ -1858,10 +1884,10 @@ input::-webkit-input-placeholder {
 .teambox .team-r:hover text strong {
   bottom: 1rem;
 }
-.footer {
+footer {
   background: #f8f8f8;
 }
-.footer .footer_box {
+footer .footer_box {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1895,18 +1921,18 @@ input::-webkit-input-placeholder {
   margin: 0 4rem;
   height: 6.7rem;
 }
-.footer .footer_box p {
+footer .footer_box p {
   font-size: 0.6rem;
   color: #666;
   margin-bottom: .75rem;
 }
-.footer .footer_box p:last-child {
+footer .footer_box p:last-child {
   margin-bottom: 0;
 }
-.footer .footer_box p span {
+footer .footer_box p span {
   margin-right: 1rem;
 }
-.footer .footer_box ul {
+footer .footer_box ul {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1920,13 +1946,13 @@ input::-webkit-input-placeholder {
   display: -o-flex;
   display: flex;
 }
-.footer .footer_box ul li {
+footer .footer_box ul li {
   margin-right: 1.5rem;
 }
-.footer .footer_box ul li:last-child {
+footer .footer_box ul li:last-child {
   margin-right: 0;
 }
-.footer .footer_box ul li img {
+footer .footer_box ul li img {
   width: 2.25rem;
   height: 2.25rem;
   vertical-align: bottom;
@@ -1946,59 +1972,67 @@ input::-webkit-input-placeholder {
   font-size: 3rem;
   color: #000000;
 }
-.service-header .slide-1-info button:last-child,
-.farm-header .slide-1-info button:last-child {
-  background: rgba(90, 133, 195, 0.9);
-}
-.service-header .slide-1-info button:last-child:hover,
-.farm-header .slide-1-info button:last-child:hover {
-  background: rgba(83, 127, 192, 0.9);
-}
-.service-header .slide-1-info button:last-child:active,
-.farm-header .slide-1-info button:last-child:active {
-  background: rgba(90, 133, 195, 0.9);
-}
-.service-header .header-login a,
-.farm-header .header-login a {
-  color: #000000;
+.service-header .head-background-layer,
+.farm-header .head-background-layer,
+.service-header .head-background,
+.farm-header .head-background {
+  top: 4rem;
 }
 .service-content {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
-  flex-direction: row;
-  padding: 6rem 0;
+  padding: 4rem 0;
+  background: #fafafa;
 }
-.service-content .icon-zhongzhi {
-  color: rgba(51, 177, 79, 0.9);
-}
-.service-content .icon-erp {
-  color: #0099cc;
-}
-.service-content .icon-farm {
-  color: #f5ab19;
-}
-.service-content .icon-caigou {
-  color: #669999;
-}
-.service-content .icon-jiankong {
-  color: #ff6666;
-}
-.service-content .icon-shebei {
-  color: #6699cc;
-}
-.service-content i {
-  flex: 2;
+.service-content p {
+  -webkit-box-flex: 1.2;
+  -moz-box-flex: 1.2;
+  -webkit-flex: 1.2 1.2 auto;
+  -ms-flex: 1.2 1.2 auto;
+  flex: 1.2 1.2 auto;
   text-align: center;
-  font-size: 6rem;
-  height: 6.3rem;
+}
+.service-content p img {
+  width: 8rem;
+  height: 10rem;
 }
 .service-content .service-content-box {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: row;
   max-width: 58rem;
   margin: 0 auto;
 }
 .service-content .service-content-box section {
-  flex: 3;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -webkit-flex: 3 3 auto;
+  -ms-flex: 3 3 auto;
+  flex: 3 3 auto;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: rgba(0, 0, 0, 0.5);
@@ -2006,7 +2040,6 @@ input::-webkit-input-placeholder {
 .service-content .service-content-box section h4 {
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: .5rem;
   color: #000000;
 }
 .service-content .service-content-box section:nth-child(2) {
@@ -2018,7 +2051,7 @@ input::-webkit-input-placeholder {
   padding: 0 4%;
 }
 .service-r {
-  background: #fafafa;
+  background: #fff;
 }
 .service-r .service-content-box section:first-child {
   flex: 5;

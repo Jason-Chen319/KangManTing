@@ -62,34 +62,34 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /*-- 自适应分辨率 ------------------------------------------*/
 @media only screen and (max-width: 600px){
   //图文
-  .formatFile{
-    ul{
-      flex-wrap: wrap;
-      padding:0;
-      width: 90%;
-      margin: 0 auto;
-      li{
-        .justify_content_center;
-        width: 50%;
-        margin-bottom: 3rem;
-        &:nth-child(n+5){
-          margin-bottom: 3rem;
-        }
-        &:nth-child(n+7){
-          margin-bottom: 2rem;
-        }
-        div{
-          width: 5rem;
-          height: 7rem;
-          &:hover{
-            .mask, p{
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
+  //.formatFile{
+  //  ul{
+  //    flex-wrap: wrap;
+  //    padding:0;
+  //    width: 90%;
+  //    margin: 0 auto;
+  //    li{
+  //      .justify_content_center;
+  //      width: 50%;
+  //      margin-bottom: 3rem;
+  //      &:nth-child(n+5){
+  //        margin-bottom: 3rem;
+  //      }
+  //      &:nth-child(n+7){
+  //        margin-bottom: 2rem;
+  //      }
+  //      div{
+  //        width: 5rem;
+  //        height: 7rem;
+  //        &:hover{
+  //          .mask, p{
+  //            display: none;
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
 
 }
 
@@ -536,41 +536,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
-  footer {
-    .footernavbox {
-      padding: 0;
-      flex-direction: column;
-      dl {
-        position: relative;
-        overflow: hidden;
-        padding: .5rem 1rem;
-        padding-left: 5rem;
-        line-height: 1.5rem;
-        dt {
-          position: absolute;
-          left: 1rem;
-          top: .6rem;
-          width: 2rem;
-        }
-        dd {
-          width: 33.33333333329%;
-          float: left;
-        }
-        &:nth-child(4) {
-          dd {
-            width: 100%;
-          }
-        }
-        &:nth-child(odd) {
-          background: rgba(0, 0, 0, .1);
-        }
-      }
-      .code {
-        margin: 2rem auto;
-      }
-    }
-  }
-
   .fonts{
     font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
@@ -586,44 +551,48 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .service-header {
 
-    .head-background {
-      zoom: 1 !important;
-      background-size: 202% !important;
-      background-position: center bottom !important;
-      background-color: #eef1f6 !important;
-    }
-
-    .head-info {
-      position: absolute;
-      z-index: 1000;
-      button {
-        margin: 4rem auto 0 auto;
-        margin-top: 3rem;
-        display: block;
-        &:last-child {
-          padding: 0;
-          background: transparent;
-          color: @color-c000;
-          font-size: @font16;
-          margin-top: 1rem;
-          &:hover, &:active {
-            background: transparent;
-            color: rgba(0, 0, 0, .5);
-          }
-        }
-      }
-    }
-
-    .slide-1-info{
-      margin-top: 3rem;
-    }
+    //.head-background {
+    //  zoom: 1 !important;
+    //  //background-size: 202% !important;
+    //  background-position: center bottom !important;
+    //  background-color: #eef1f6 !important;
+    //}
+    //
+    //.head-info {
+    //  position: absolute;
+    //  z-index: 1000;
+    //  button {
+    //    margin: 4rem auto 0 auto;
+    //    margin-top: 3rem;
+    //    display: block;
+    //    &:last-child {
+    //      padding: 0;
+    //      background: transparent;
+    //      color: @color-c000;
+    //      font-size: @font16;
+    //      margin-top: 1rem;
+    //      &:hover, &:active {
+    //        background: transparent;
+    //        color: rgba(0, 0, 0, .5);
+    //      }
+    //    }
+    //  }
+    //}
+    //
+    //.slide-1-info{
+    //  margin-top: 3rem;
+    //}
 
   }
 
   .service-content {
     padding: 0;
-    height: 100%;
+    height: 84%;
     i {
+      flex: inherit;
+      margin-top: 1rem;
+    }
+    p{
       flex: inherit;
       margin-top: 1rem;
     }
@@ -650,7 +619,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         height: 100%;
         padding: 0;
         position: relative;
-        i {
+        p {
           position: absolute;
           top: 0;
           width: @width;
@@ -660,7 +629,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
           text-align: center;
           font-size: @font14;
           position: absolute;
-          top: 7.3rem;
+          top: 11rem;
           width: @width;
           h4 {
             padding-bottom: .5rem;
@@ -780,7 +749,36 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 1rem;
   }
 
-
+  //图文
+  .formatFile{
+    flex-wrap: wrap;
+    padding:0;
+    width:90%;
+    margin:0 auto;
+    ul{
+      .flex(1);
+      flex-wrap: wrap;
+      &.formatFile_r{
+        li:nth-child(n+3){
+          margin-bottom: 2rem;
+        }
+      }
+      li{
+        .justify_content(center);
+        margin-bottom: 3rem;
+        width:50%;
+        a{
+          width: 6rem;
+          height: 8rem;
+          &:hover{
+            .mask, p{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 
   //解决方案
   .solution{
@@ -809,7 +807,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding:0;
   }
 
-  .footer{
+  footer{
     .footer_box{
       ul{
         li{
@@ -953,31 +951,31 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
   //图文
-  .formatFile{
-    ul{
-      flex-wrap: wrap;
-      padding:0;
-      //width: 90%;
-      margin: 0 auto;
-      li{
-        .justify_content_center;
-        width: 25%;
-        margin-bottom: 3rem;
-        &:nth-child(n+5){
-          margin-bottom: 2rem;
-        }
-        div{
-          width: 5rem;
-          height: 7rem;
-          &:hover{
-            .mask, p{
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
+  //.formatFile{
+  //  ul{
+  //    flex-wrap: wrap;
+  //    padding:0;
+  //    //width: 90%;
+  //    margin: 0 auto;
+  //    li{
+  //      .justify_content_center;
+  //      width: 25%;
+  //      margin-bottom: 3rem;
+  //      &:nth-child(n+5){
+  //        margin-bottom: 2rem;
+  //      }
+  //      div{
+  //        width: 5rem;
+  //        height: 7rem;
+  //        &:hover{
+  //          .mask, p{
+  //            display: none;
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1062,16 +1060,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
     vertical-align: top;
   }
 
-  footer {
-    .footernavbox {
-      padding: 2rem 3rem;
-      .code {
-        width: 7rem;
-        height: 7rem;
-        display: none;
-      }
-    }
-  }
+  //footer {
+  //  .footernavbox {
+  //    padding: 2rem 3rem;
+  //    .code {
+  //      width: 7rem;
+  //      height: 7rem;
+  //      display: none;
+  //    }
+  //  }
+  //}
 
   .login-container {
     .loginbox {
@@ -1261,6 +1259,35 @@ and (-webkit-min-device-pixel-ratio: 2) {
       background-size: 150%;
     }
   }
+
+  //图文
+  .formatFile{
+    flex-wrap: wrap;
+    ul{
+      .flex(1);
+      .justify_content(space-between);
+      li{
+        margin-bottom: 3rem;
+        &:nth-child(n+5){
+          margin-bottom: 3rem;
+        }
+        &:nth-child(n+7){
+          margin-bottom: 2rem;
+        }
+        a{
+          width: 6rem;
+          height: 8rem;
+          &:hover{
+            p{
+              font-size: @font12;
+              padding: .3rem;
+              line-height: .8rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (width: 768px) {
@@ -1439,7 +1466,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
-  .footer{
+  footer{
     .footer_box{
       height: auto;
       padding: 1.5rem 0;
@@ -1524,17 +1551,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
 //@media only screen and (max-width: 1365px){
 //}
 
-@media only screen and (min-width: 768px) and (max-width: 1439px){
+@media only screen and (min-width: 960px) and (max-width: 1439px){
   html {
     font-size: 20px;
   }
   .formatFile{
+    flex-wrap: wrap;
     ul{
-      flex-wrap: wrap;
-      padding:0;
+      .flex(1);
+      .justify_content(space-between);
       li{
-        .justify_content_center;
-        width: 25%;
         margin-bottom: 3rem;
         &:nth-child(n+5){
           margin-bottom: 2rem;

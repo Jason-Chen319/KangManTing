@@ -118,6 +118,9 @@ input::-webkit-input-placeholder {
 .text-center {
   text-align: center;
 }
+img {
+  vertical-align: bottom;
+}
 #__bs_notify__ {
   display: none !important;
 }

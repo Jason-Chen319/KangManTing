@@ -226,15 +226,17 @@
 .formatFile{
   max-width: 72rem;
   margin:0 auto;
+  padding: 0 4rem;
+  .display;
   ul{
     .display;
-    padding: 0 4rem;
     li{
       .display;
       //width: 8rem;
       //min-height: 10rem;
       margin-bottom: 2rem;
-      div{
+      a{
+        .display;
         width: 8rem;
         height: 10rem;
         position: relative;
@@ -270,7 +272,7 @@
           display: none;
           //overflow: hidden;
           //white-space: nowrap;
-          text-overflow: ellipsis;
+          //text-overflow: ellipsis;
         }
         h2 {
           position: absolute;
@@ -284,7 +286,6 @@
           text-overflow: ellipsis;
         }
       }
-
     }
   }
 }
@@ -1072,7 +1073,7 @@
 }
 
 //页面底部
-.footer{
+footer{
   background: #f8f8f8;
   //padding: 0 4rem;
   .footer_box{
@@ -1169,66 +1170,54 @@
       font-size: @font60;
       color: @color-c000;
     }
-    button:last-child {
-      background: @color-cblue;
-      &:hover {
-        background: darken(@color-cblue, 2%);
-      }
-      &:active {
-        background: @color-cblue;
-      }
-    }
+    //button:last-child {
+    //  background: @color-cblue;
+    //  &:hover {
+    //    background: darken(@color-cblue, 2%);
+    //  }
+    //  &:active {
+    //    background: @color-cblue;
+    //  }
+    //}
   }
-  .header-login {
-    a {
-      color: @color-c000;
-    }
+  //.header-login {
+  //  a {
+  //    color: @color-c000;
+  //  }
+  //}
+  .head-background-layer, .head-background{
+    top: 4rem;
   }
 }
 
 .service-content {
-  display: flex;
-  flex-direction: row;
-  padding: 6rem 0;
-  .icon-zhongzhi {
-    color: @color-cgreen;
-  }
-  .icon-erp {
-    color: #0099cc;
-  }
-  .icon-farm {
-    color: #f5ab19;
-  }
-  .icon-caigou {
-    color: #669999;
-  }
-  .icon-jiankong {
-    color: #ff6666;
-  }
-  .icon-shebei {
-    color: #6699cc;
+  .display;
+  //flex-direction: row;
+  padding: 4rem 0;
+  background: lighten(@color-c000, 98%);
+  p{
+    .flex(1.2);
+    text-align: center;
+    img{
+      width: 8rem;
+      height: 10rem;
+    }
   }
 
-  i {
-    flex: 2;
-    text-align: center;
-    font-size: @font120;
-    height: 6.3rem;
-  }
   .service-content-box{
-    display: flex;
+    .display;
     flex-direction: row;
     max-width: 58rem;
     margin: 0 auto;
     section {
-      flex: 3;
+      .flex(3);
+      .align_self(center);
       font-size: @font16;
       line-height: 1.5rem;
       color: rgba(0, 0, 0, .5);
       h4 {
         font-size: @font30;
         font-weight: 500;
-        padding-bottom: .5rem;
         color: rgba(0, 0, 0, 1);
       }
     }
@@ -1245,7 +1234,7 @@
 }
 
 .service-r {
-  background: lighten(@color-c000, 98%);
+  background: #fff;
   .service-content-box{
     section:first-child {
       flex: 5;
