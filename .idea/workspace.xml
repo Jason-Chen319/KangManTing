@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dda6b20-5c3a-428a-a9fc-243aca3cd03d" name="Default" comment="关于">
+    <list default="true" id="0dda6b20-5c3a-428a-a9fc-243aca3cd03d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/index.css" afterPath="$PROJECT_DIR$/less/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/responsive.css" afterPath="$PROJECT_DIR$/less/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/responsive.less" afterPath="$PROJECT_DIR$/less/responsive.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/style.less" afterPath="$PROJECT_DIR$/less/style.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -801,7 +794,7 @@
       <workItem from="1510708763109" duration="27761000" />
       <workItem from="1510794601768" duration="14869000" />
       <workItem from="1510881526279" duration="21177000" />
-      <workItem from="1511140473920" duration="25334000" />
+      <workItem from="1511140473920" duration="25403000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <created>1510143922267</created>
@@ -859,11 +852,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510914053859</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="关于">
+      <created>1511179836228</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511179836229</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201880000" />
+    <option name="totallyTimeSpent" value="201949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -942,9 +942,9 @@
     <MESSAGE value="banner" />
     <MESSAGE value="office" />
     <MESSAGE value="物流配送" />
-    <MESSAGE value="关于" />
     <MESSAGE value="服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="服务" />
+    <MESSAGE value="关于" />
+    <option name="LAST_COMMIT_MESSAGE" value="关于" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
