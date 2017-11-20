@@ -404,9 +404,6 @@
         width: 100%;
         height: 100%;
         vertical-align: bottom;
-        &.secondImg{
-          display: none;
-        }
       }
     }
     .flowPath{
@@ -453,7 +450,7 @@
         position: absolute;
         font-size: @font14;
         color: #333;
-        min-width:7rem;
+        min-width:9rem;
         &.ps_l{
           top: 1.15rem;
           right: 3.9rem;
@@ -471,6 +468,10 @@
         &.ps_r_t{
           left: 1.5rem;
           top: -1.5rem;
+        }
+        i{
+          font-style: normal;
+          display: none;
         }
       }
       div{
@@ -1159,6 +1160,55 @@ footer{
 //    }
 //  }
 //}
+
+/***** 联系页 start *****/
+//联系信息
+.contact_info{
+  padding:0 4rem;
+  .display;
+  section{
+    width:50%;
+    margin-bottom: 1rem;
+    h5{
+      font-size: 1.2rem;
+      color: #333;
+      //line-height: 1.8rem;
+      margin-bottom: .6rem;
+    }
+    p{
+      font-size: .8rem;
+      color: #999;
+      line-height: 1.4rem;
+      span{
+        color: #333;
+        font-size: 1rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+/***** 联系页 end *****/
+
+/***** 关于页 start *****/
+.qualification_honor{
+  padding: 0 4rem;
+  ul{
+    .display;
+    .justify_content(space-between );
+    &:nth-child(1) li{
+      margin-bottom: 1rem;
+    }
+    li{
+      img{
+        width: 10rem;
+        height: 8rem;
+      }
+    }
+  }
+}
+
+/***** 关于页 end *****/
 
 /*--服务页面--*/
 .service-header,.farm-header {

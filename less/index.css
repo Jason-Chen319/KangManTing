@@ -1219,9 +1219,6 @@ img {
   height: 100%;
   vertical-align: bottom;
 }
-.dispatching .semicircle .innerImg img.secondImg {
-  display: none;
-}
 .dispatching .semicircle .flowPath {
   /* 2009 spec */
   display: -webkit-box;
@@ -1277,7 +1274,7 @@ img {
   position: absolute;
   font-size: 0.7rem;
   color: #333;
-  min-width: 7rem;
+  min-width: 9rem;
 }
 .dispatching .semicircle .flowPath h3.ps_l {
   top: 1.15rem;
@@ -1296,6 +1293,10 @@ img {
 .dispatching .semicircle .flowPath h3.ps_r_t {
   left: 1.5rem;
   top: -1.5rem;
+}
+.dispatching .semicircle .flowPath h3 i {
+  font-style: normal;
+  display: none;
 }
 .dispatching .semicircle .flowPath div {
   position: relative;
@@ -1957,6 +1958,77 @@ footer .footer_box ul li img {
   height: 2.25rem;
   vertical-align: bottom;
 }
+/***** 联系页 start *****/
+.contact_info {
+  padding: 0 4rem;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.contact_info section {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.contact_info section h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: .6rem;
+}
+.contact_info section p {
+  font-size: .8rem;
+  color: #999;
+  line-height: 1.4rem;
+}
+.contact_info section p span {
+  color: #333;
+  font-size: 1rem;
+  margin-right: .5rem;
+}
+/***** 联系页 end *****/
+/***** 关于页 start *****/
+.qualification_honor {
+  padding: 0 4rem;
+}
+.qualification_honor ul {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  /*混合版本语法*/
+  -ms-flex-pack: space-between;
+  /*新版本语法*/
+  -webkit-justify-content: flex-space-between;
+  justify-content: space-between;
+}
+.qualification_honor ul:nth-child(1) li {
+  margin-bottom: 1rem;
+}
+.qualification_honor ul li img {
+  width: 10rem;
+  height: 8rem;
+}
+/***** 关于页 end *****/
 /*--服务页面--*/
 .service-header,
 .farm-header {

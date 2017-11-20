@@ -106,7 +106,340 @@ html {
   }
 }
 /*-- 自适应分辨率 ------------------------------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 479px) {
+  .dispatching {
+    height: auto;
+    padding: 2rem 0 1rem;
+  }
+  .dispatching .semicircle {
+    width: 90%;
+    margin: 0 auto;
+    height: 44rem;
+    border: 0;
+    border-radius: 0;
+  }
+  .dispatching .semicircle .innerImg {
+    bottom: inherit;
+    left: 5.05rem;
+    top: 0;
+    width: 100%;
+    height: 12.5rem;
+  }
+  .dispatching .semicircle .innerImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .dispatching .semicircle .flowPath:hover p,
+  .dispatching .semicircle .flowPath:hover span {
+    display: none;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: 0;
+    top: 13rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: 0;
+    top: 16.9rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: 0;
+    top: 20.8rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: 0;
+    top: 24.7rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    left: 0;
+    top: 28.6rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    left: 0;
+    top: 32.5rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    left: 0;
+    top: 36.4rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    left: 0;
+    top: 40.3rem;
+    right: inherit;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath h3 {
+    margin-left: 2rem;
+    top: 1.3rem !important;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l {
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r {
+    left: 4.4rem;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l_t {
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r_t {
+    left: 4.4rem;
+    right: inherit;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
+  }
+  .dispatching .semicircle .flowPath div img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+  .dispatching {
+    height: auto;
+    padding: 2rem 0 1rem;
+  }
+  .dispatching .semicircle {
+    width: 90%;
+    margin: 0 auto;
+    height: 27.1rem;
+    border: 0;
+    border-radius: 0;
+  }
+  .dispatching .semicircle .innerImg {
+    bottom: inherit;
+    left: 5.05rem;
+    top: 0;
+    width: 100%;
+    height: 12.5rem;
+  }
+  .dispatching .semicircle .innerImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .dispatching .semicircle .flowPath:hover p,
+  .dispatching .semicircle .flowPath:hover span {
+    display: none;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: 0;
+    top: 13rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: 0;
+    top: 16.4rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: 0;
+    top: 19.8rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: 0;
+    top: 23.2rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    top: 13rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    top: 16.4rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    top: 19.8rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    top: 23.2rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath h3 {
+    font-size: 0.6rem;
+    top: 1.05rem !important;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l {
+    right: inherit;
+    left: 3.6rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r {
+    left: inherit;
+    right: 3.6rem;
+    text-align: right;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l_t {
+    right: inherit;
+    left: 3.6rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r_t {
+    left: inherit;
+    right: 3.6rem;
+    text-align: right;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
+  }
+  .dispatching .semicircle .flowPath div img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media only screen and (max-width: 567px) {
+  /***** 关于页 start *****/
+  .qualification_honor {
+    padding: 0;
+  }
+  .qualification_honor ul {
+    width: 90%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .qualification_honor ul:last-child li {
+    margin-bottom: 1rem;
+  }
+  .qualification_honor ul:last-child li:nth-child(n+3) {
+    margin: 0;
+  }
+  .qualification_honor ul li {
+    width: 50%;
+    text-align: center;
+  }
+  .qualification_honor ul li img {
+    width: 7rem;
+    height: 5rem;
+  }
+  /***** 关于页 end *****/
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+  .dispatching {
+    height: auto;
+    padding: 2rem 0 1rem;
+  }
+  .dispatching .semicircle {
+    width: 90%;
+    margin: 0 auto;
+    height: 28.6rem;
+    border: 0;
+    border-radius: 0;
+  }
+  .dispatching .semicircle .innerImg {
+    bottom: inherit;
+    left: 5.05rem;
+    top: 0;
+    width: 100%;
+    height: 12.5rem;
+  }
+  .dispatching .semicircle .innerImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .dispatching .semicircle .flowPath:hover p,
+  .dispatching .semicircle .flowPath:hover span {
+    display: none;
+  }
+  .dispatching .semicircle .flowPath.step1 {
+    left: 0;
+    top: 13rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step2 {
+    left: 0;
+    top: 16.9rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step3 {
+    left: 0;
+    top: 20.8rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step4 {
+    left: 0;
+    top: 24.7rem;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step5 {
+    top: 13rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step6 {
+    top: 16.9rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step7 {
+    top: 20.8rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath.step8 {
+    top: 24.7rem;
+    right: 0;
+    bottom: inherit;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l {
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r {
+    left: inherit;
+    right: 4.4rem;
+    text-align: right;
+  }
+  .dispatching .semicircle .flowPath h3.ps_l_t {
+    top: 1.15rem;
+    right: inherit;
+    left: 4.4rem;
+    text-align: left;
+  }
+  .dispatching .semicircle .flowPath h3.ps_r_t {
+    left: inherit;
+    right: 4.4rem;
+    top: 1.15rem;
+    text-align: right;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
+  }
+  /***** 关于页 start *****/
+  .qualification_honor {
+    padding: 0;
+  }
+  .qualification_honor ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .qualification_honor ul li img {
+    width: 6rem;
+    height: 4rem;
+  }
+  /***** 关于页 end *****/
 }
 @media only screen and (max-width: 767px) {
   html {
@@ -736,98 +1069,17 @@ html {
   footer .footer_box ul li {
     margin-right: .5rem;
   }
-  .dispatching {
-    height: 38.2rem;
-    padding: 2rem 0;
-  }
-  .dispatching .semicircle {
-    width: 80%;
-    height: 34.2rem;
-    border: 0;
-    border-left: 1px solid #ddd;
-    margin-left: 1.7rem;
-    border-radius: 0;
-  }
-  .dispatching .semicircle .innerImg {
-    display: none;
-    bottom: 0;
-    left: inherit;
-    right: 0;
-    width: 50%;
-    height: 100%;
-  }
-  .dispatching .semicircle .innerImg img {
-    width: 100%;
-    height: 50%;
-  }
-  .dispatching .semicircle .innerImg img.secondImg {
+  /***** 联系页 start *****/
+  .contact_info {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
     display: block;
   }
-  .dispatching .semicircle .flowPath.step1 {
-    left: -1.7rem;
-    top: 0;
-    bottom: inherit;
+  .contact_info section {
+    width: 100%;
   }
-  .dispatching .semicircle .flowPath.step2 {
-    left: -1.7rem;
-    top: 4.4rem;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step3 {
-    left: -1.7rem;
-    top: 8.8rem;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step4 {
-    left: -1.7rem;
-    top: 13.2rem;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step5 {
-    left: -1.7rem;
-    top: 17.6rem;
-    right: inherit;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step6 {
-    left: -1.7rem;
-    top: 22rem;
-    right: inherit;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step7 {
-    left: -1.7rem;
-    top: 26.4rem;
-    right: inherit;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath.step8 {
-    left: -1.7rem;
-    top: 30.8rem;
-    right: inherit;
-    bottom: inherit;
-  }
-  .dispatching .semicircle .flowPath h3 {
-    margin-left: 2rem;
-  }
-  .dispatching .semicircle .flowPath h3.ps_l {
-    right: inherit;
-    left: 4.4rem;
-    text-align: left;
-  }
-  .dispatching .semicircle .flowPath h3.ps_r {
-    left: 4.4rem;
-  }
-  .dispatching .semicircle .flowPath h3.ps_l_t {
-    top: 1.15rem;
-    right: inherit;
-    left: 4.4rem;
-    text-align: left;
-  }
-  .dispatching .semicircle .flowPath h3.ps_r_t {
-    left: 4.4rem;
-    top: 1.15rem;
-  }
+  /***** 联系页 end *****/
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   html {
@@ -943,73 +1195,68 @@ html {
     border-top: 1px solid #fafafa;
   }
   .dispatching {
-    height: 38.2rem;
-    padding: 2rem 0;
+    height: auto;
+    padding: 3rem 4rem 2rem;
   }
   .dispatching .semicircle {
-    width: 80%;
-    height: 34.2rem;
+    width: 100%;
+    height: 28.6rem;
     border: 0;
-    border-left: 1px solid #ddd;
-    margin-left: 1.7rem;
     border-radius: 0;
   }
   .dispatching .semicircle .innerImg {
-    bottom: 0;
-    left: inherit;
-    right: 0;
-    width: 60%;
-    height: 100%;
+    bottom: inherit;
+    left: 5.05rem;
+    top: 0;
+    width: 100%;
+    height: 12.5rem;
   }
   .dispatching .semicircle .innerImg img {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
-  .dispatching .semicircle .innerImg img.secondImg {
-    display: block;
+  .dispatching .semicircle .flowPath:hover p,
+  .dispatching .semicircle .flowPath:hover span {
+    display: none;
   }
   .dispatching .semicircle .flowPath.step1 {
-    left: -1.7rem;
-    top: 0;
+    left: 0;
+    top: 13rem;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step2 {
-    left: -1.7rem;
-    top: 4.4rem;
+    left: 0;
+    top: 16.9rem;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step3 {
-    left: -1.7rem;
-    top: 8.8rem;
+    left: 0;
+    top: 20.8rem;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step4 {
-    left: -1.7rem;
-    top: 13.2rem;
+    left: 0;
+    top: 24.7rem;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step5 {
-    left: -1.7rem;
-    top: 17.6rem;
-    right: inherit;
+    top: 13rem;
+    right: 0;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step6 {
-    left: -1.7rem;
-    top: 22rem;
-    right: inherit;
+    top: 16.9rem;
+    right: 0;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step7 {
-    left: -1.7rem;
-    top: 26.4rem;
-    right: inherit;
+    top: 20.8rem;
+    right: 0;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath.step8 {
-    left: -1.7rem;
-    top: 30.8rem;
-    right: inherit;
+    top: 24.7rem;
+    right: 0;
     bottom: inherit;
   }
   .dispatching .semicircle .flowPath h3.ps_l {
@@ -1018,7 +1265,9 @@ html {
     text-align: left;
   }
   .dispatching .semicircle .flowPath h3.ps_r {
-    left: 4.4rem;
+    left: inherit;
+    right: 4.4rem;
+    text-align: right;
   }
   .dispatching .semicircle .flowPath h3.ps_l_t {
     top: 1.15rem;
@@ -1027,8 +1276,13 @@ html {
     text-align: left;
   }
   .dispatching .semicircle .flowPath h3.ps_r_t {
-    left: 4.4rem;
+    left: inherit;
+    right: 4.4rem;
     top: 1.15rem;
+    text-align: right;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -1109,6 +1363,20 @@ html {
     padding: .3rem;
     line-height: .8rem;
   }
+  /***** 联系页 start *****/
+  .contact_info {
+    display: block;
+  }
+  .contact_info section {
+    width: 100%;
+  }
+  /***** 联系页 end *****/
+  /***** 关于页 start *****/
+  .qualification_honor ul li img {
+    width: 7rem;
+    height: 5rem;
+  }
+  /***** 关于页 end *****/
 }
 @media only screen and (width: 768px) {
   .header .slide-1-info ul li b {
@@ -1116,6 +1384,9 @@ html {
   }
   .header .slide-1-info ul li p {
     font-size: .6rem !important;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1023px) {
@@ -1157,6 +1428,12 @@ html {
     padding-bottom: 20rem;
     background-size: 150%;
   }
+  /***** 关于页 start *****/
+  .qualification_honor ul li img {
+    width: 8rem;
+    height: 6rem;
+  }
+  /***** 关于页 end *****/
 }
 @media only screen and (width: 1024px) {
   .farm-list .farm-description {
