@@ -1080,12 +1080,12 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.solution {
+.sub_formatFile {
   height: 25rem;
   background: #f8f8f8;
   padding: 3.475rem 4rem;
 }
-.solution .solution_box {
+.sub_formatFile .sub_formatFile_box {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -1099,38 +1099,38 @@ img {
   display: -o-flex;
   display: flex;
 }
-.solution .solution_box .solution-l {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l {
   flex: 1 0 auto;
   width: 27.6rem;
   margin-right: 2rem;
 }
-.solution .solution_box .solution-l img {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l img {
   vertical-align: bottom;
   float: left;
 }
-.solution .solution_box .solution-l .bgImg {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l .bgImg {
   width: 100%;
   height: 12.55rem;
 }
-.solution .solution_box .solution-l .smImg {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l .smImg {
   width: 33.33333333329%;
   height: 5.5rem;
 }
-.solution .solution_box .solution-r .st_tit {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_tit {
   font-size: 1.2rem;
   color: #333;
   line-height: 1.8rem;
 }
-.solution .solution_box .solution-r .st_subTit {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_subTit {
   font-size: .7rem;
   color: #333;
 }
-.solution .solution_box .solution-r p {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r p {
   font-size: .7rem;
   color: #999;
   margin: .4rem 0 1.6rem 0;
 }
-.solution .solution_box .solution-r p:last-child {
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r p:last-child {
   margin-bottom: 0;
 }
 .profile {
@@ -2028,7 +2028,110 @@ footer .footer_box ul li img {
   width: 10rem;
   height: 8rem;
 }
+.enterpriseCulture .sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_subTit {
+  font-size: .7rem;
+  color: rgba(51, 177, 79, 0.9);
+}
+.enterpriseCulture .sub_formatFile .sub_formatFile_box .sub_formatFile_r p {
+  font-size: .7rem;
+  color: #999;
+  margin: .4rem 0 .6rem 0;
+}
+.enterpriseCulture .sub_formatFile .sub_formatFile_box .sub_formatFile_r p:last-child {
+  margin-bottom: 0;
+}
+.supplier .trademarks {
+  padding: 1rem 3rem 0;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: wrap;
+  -ms-flex-flow: wrap;
+}
+.supplier .trademarks ul {
+  width: 50%;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  /*混合版本语法*/
+  -ms-flex-pack: space-around;
+  /*新版本语法*/
+  -webkit-justify-content: flex-space-around;
+  justify-content: space-around;
+}
+.supplier .trademarks ul:nth-child(n+3) li {
+  margin-bottom: 0;
+}
+.supplier .trademarks ul li {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  /*混合版本语法*/
+  -ms-flex-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+  /*垂直居中*/
+  /*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /*混合版本语法*/
+  -ms-flex-align: center;
+  /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid rgba(51, 177, 79, 0.9);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.supplier .trademarks ul li img {
+  width: 80%;
+  height: 30%;
+}
 /***** 关于页 end *****/
+/***** 配送页 start *****/
+.distributionCenter .sub_formatFile_box .sub_formatFile_r p {
+  text-indent: 1.4rem;
+  line-height: 1.2rem;
+}
+/***** 配送页 end *****/
 /*--服务页面--*/
 .service-header,
 .farm-header {

@@ -107,6 +107,9 @@ html {
 }
 /*-- 自适应分辨率 ------------------------------------------*/
 @media only screen and (max-width: 479px) {
+  html {
+    font-size: 18px;
+  }
   .dispatching {
     height: auto;
     padding: 2rem 0 1rem;
@@ -205,8 +208,39 @@ html {
     width: 3rem;
     height: 3rem;
   }
+  /***** 关于页 start *****/
+  .supplier .trademarks {
+    padding: 1rem 0 0;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .supplier .trademarks ul {
+    width: 100%;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .supplier .trademarks ul:last-child li div {
+    margin-bottom: 0;
+  }
+  .supplier .trademarks ul li {
+    width: 4rem;
+    height: 4rem;
+  }
+  /***** 关于页 end *****/
 }
 @media only screen and (min-width: 480px) and (max-width: 567px) {
+  html {
+    font-size: 18px;
+  }
   .dispatching {
     height: auto;
     padding: 2rem 0 1rem;
@@ -304,8 +338,39 @@ html {
     width: 2.5rem;
     height: 2.5rem;
   }
+  /***** 关于页 start *****/
+  .supplier .trademarks {
+    padding: 1rem 0 0;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .supplier .trademarks ul {
+    width: 100%;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .supplier .trademarks ul:last-child li div {
+    margin-bottom: 0;
+  }
+  .supplier .trademarks ul li {
+    width: 5rem;
+    height: 5rem;
+  }
+  /***** 关于页 end *****/
 }
 @media only screen and (max-width: 567px) {
+  html {
+    font-size: 18px;
+  }
   /***** 关于页 start *****/
   .qualification_honor {
     padding: 0;
@@ -438,6 +503,32 @@ html {
   .qualification_honor ul li img {
     width: 6rem;
     height: 4rem;
+  }
+  .supplier .trademarks {
+    padding: 1rem 0 0;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .supplier .trademarks ul {
+    width: 100%;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .supplier .trademarks ul:last-child li div {
+    margin-bottom: 0;
+  }
+  .supplier .trademarks ul li {
+    width: 5.5rem;
+    height: 5.5rem;
   }
   /***** 关于页 end *****/
 }
@@ -1040,11 +1131,11 @@ html {
   .formatFile ul li a:hover p {
     display: none;
   }
-  .solution {
+  .sub_formatFile {
     height: auto;
     padding: 2rem 0;
   }
-  .solution .solution_box {
+  .sub_formatFile .sub_formatFile_box {
     width: 90%;
     margin: 0 auto;
     /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
@@ -1057,7 +1148,7 @@ html {
     -o-flex-direction: column;
     flex-direction: column;
   }
-  .solution .solution_box .solution-l {
+  .sub_formatFile .sub_formatFile_box .sub_formatFile_l {
     width: 100%;
     margin-bottom: 1rem;
   }
@@ -1083,7 +1174,7 @@ html {
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
   .login-container .loginbox {
     left: 5%;
@@ -1194,6 +1285,7 @@ html {
     margin-top: 1.5rem;
     border-top: 1px solid #fafafa;
   }
+  /***** 首页 start *****/
   .dispatching {
     height: auto;
     padding: 3rem 4rem 2rem;
@@ -1284,6 +1376,33 @@ html {
   .dispatching .semicircle .flowPath h3 i {
     display: inline-block;
   }
+  /***** 首页 end *****/
+  /***** 关于页 start*****/
+  .supplier .trademarks {
+    padding: 2rem 4rem 0;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .supplier .trademarks ul {
+    width: 100%;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .supplier .trademarks ul:last-child li div {
+    margin-bottom: 0;
+  }
+  .supplier .trademarks ul li {
+    width: 6rem;
+    height: 6rem;
+  }
+  /***** 关于页 start*****/
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .smartfarm-header .slide-1-info h2 {
@@ -1465,10 +1584,10 @@ html {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .solution {
+  .sub_formatFile {
     height: auto;
   }
-  .solution .solution_box {
+  .sub_formatFile .sub_formatFile_box {
     /* UC 浏览器 使用flex-direction: column;的时候需要加上*/
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
@@ -1479,7 +1598,7 @@ html {
     -o-flex-direction: column;
     flex-direction: column;
   }
-  .solution .solution_box .solution-l {
+  .sub_formatFile .sub_formatFile_box .sub_formatFile_l {
     width: 100%;
     margin-bottom: 1rem;
   }

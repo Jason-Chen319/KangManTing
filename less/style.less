@@ -290,15 +290,15 @@
   }
 }
 
-//解决方案
-.solution{
+//解决方案 solution
+.sub_formatFile{
   //flex-wrap: wrap;
   height: 25rem;
   background: #f8f8f8;
   padding: 3.475rem 4rem;
-  .solution_box{
+  .sub_formatFile_box{
     .display;
-    .solution-l{
+    .sub_formatFile_l{
       flex: 1 0 auto;
       width: 27.6rem;
       margin-right: 2rem;
@@ -316,7 +316,7 @@
       }
 
     }
-    .solution-r{
+    .sub_formatFile_r{
       .st_tit{
         font-size: 1.2rem;
         color: #333;
@@ -1111,55 +1111,6 @@ footer{
   }
 
 }
-//footer {
-//  background: rgba(0, 0, 0, .8);
-//  //margin-top: 3rem;
-//
-//  .footernavbox {
-//    padding: 3rem 5rem;
-//    display: flex;
-//    flex-direction: row;
-//    color: @color-cfff;
-//    a {
-//      color: rgba(255, 255, 255, .6);
-//    }
-//    dl {
-//      flex: 1;
-//      font-size: @font14;
-//      line-height: 1.7rem;
-//      dt {
-//        font-size: @font16;
-//        padding-bottom: .8rem;
-//      }
-//      dd {
-//        color: rgba(255, 255, 255, .6);
-//      }
-//      &:nth-child(4) {
-//        flex: 2;
-//      }
-//    }
-//    .code {
-//      width: 8rem;
-//      height: 8rem;
-//      border-radius: @borderRadius;
-//      background: @color-cfff;
-//      img {
-//        width: @width;
-//      }
-//    }
-//  }
-//  .copyright {
-//    background: @color-c000;
-//    line-height: 1.3rem;
-//    padding: 1rem;
-//    text-align: center;
-//    font-size: @font12;
-//    color: rgba(255, 255, 255, .5);
-//    a{
-//      color: rgba(255, 255, 255, .5);
-//    }
-//  }
-//}
 
 /***** 联系页 start *****/
 //联系信息
@@ -1208,7 +1159,75 @@ footer{
   }
 }
 
+//企业文化
+.enterpriseCulture{
+  .sub_formatFile {
+    .sub_formatFile_box {
+      .sub_formatFile_r {
+        .st_subTit {
+          font-size: .7rem;
+          color: @color-cgreen;
+        }
+        p {
+          font-size: .7rem;
+          color: #999;
+          margin: .4rem 0 .6rem 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//品牌供应商
+.supplier{
+  .trademarks{
+    padding:1rem 3rem 0;
+    .display;
+    .flex_flow;
+    ul{
+      width: 50%;
+      .display;
+      .justify_content(space-around);
+      &:nth-child(n+3) li{
+        margin-bottom: 0;
+      }
+      li{
+        .display;
+        .justify_content_center;
+        .align_items_center;
+        width:5rem;
+        height:5rem;
+        border:1px solid @color-cgreen;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        img{
+          width: 80%;
+          height: 30%;
+        }
+      }
+    }
+  }
+}
+
+
 /***** 关于页 end *****/
+
+/***** 配送页 start *****/
+//大型物流配送中心
+.distributionCenter{
+  .sub_formatFile_box{
+    .sub_formatFile_r{
+      p{
+        text-indent: 1.4rem;
+        line-height: 1.2rem;
+      }
+    }
+  }
+}
+/***** 配送页 end *****/
 
 /*--服务页面--*/
 .service-header,.farm-header {
@@ -2028,7 +2047,7 @@ footer{
   i {
     font-size: 5rem;
     color: @color-cgreen;
-    
+
   }
   h2 {
     font-size: 2rem;
@@ -2039,5 +2058,4 @@ footer{
     margin-top: 1rem;
     color: fadeout(@color-c000, 50%);
   }
-
 }
