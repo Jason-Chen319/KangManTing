@@ -197,7 +197,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
       ul{
         width: 100%;
         .justify_content(space-between);
-        &:last-child li div{
+        &:nth-child(3) li{
+          margin-bottom: 1rem;
+        }
+        &:last-child li{
           margin-bottom: 0;
         }
         li{
@@ -349,7 +352,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
       ul{
         width: 100%;
         .justify_content(space-between);
-        &:last-child li div{
+        &:nth-child(3) li{
+          margin-bottom: 1rem;
+        }
+        &:last-child li{
           margin-bottom: 0;
         }
         li{
@@ -363,8 +369,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
-
-
 }
 
 @media only screen and (max-width: 567px){
@@ -372,7 +376,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 18px;
   }
   /***** 关于页 start *****/
-  .qualification_honor{
+  .imgs_space_between{
     padding:0;
     ul{
       width:90%;
@@ -387,9 +391,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
       li{
         width: 50%;
         text-align: center;
+        //.display;
+        //.justify_content_center;
         img{
           width: 7rem;
           height: 5rem;
+        }
+        p{
+          width: 7rem;
+          margin:0 auto;
+          font-size: @font12;
         }
       }
     }
@@ -519,15 +530,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   /***** 关于页 start *****/
-  .qualification_honor{
+  .imgs_space_between{
     padding:0;
     ul{
       width:90%;
       margin: 0 auto;
       li{
+        width: 6rem;
         img{
           width: 6rem;
           height: 4rem;
+        }
+        p{
+          font-size: @font12;
         }
       }
     }
@@ -543,7 +558,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
       ul{
         width: 100%;
         .justify_content(space-between);
-        &:last-child li div{
+        &:nth-child(3) li{
+          margin-bottom: 1rem;
+        }
+        &:last-child li{
           margin-bottom: 0;
         }
         li{
@@ -671,7 +689,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
             height: 2.5rem;
           }
           &.active {
-            color: rgba(71, 184, 95, 1) !important;
+            //color: rgba(71, 184, 95, 1) !important;
             background: rgba(71, 184, 95, 0);
             border-bottom: 1px solid lighten(@color-c000, 95%);
             height: 2.5rem;
@@ -1321,6 +1339,145 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .smartfarm-header .slide-1-info {
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    ul {
+      text-align: center;
+      li {
+        float: inherit;
+        width: auto;
+        display: inline-block;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .farm-list {
+    .farm-description {
+      max-width: 90%;
+    }
+    &.farm-task {
+      padding-bottom: 18rem;
+      background-size: 140%;
+    }
+    &.farm-trace {
+      padding-bottom: 19rem;
+      background-size: 140%;
+    }
+    &.farm-chart {
+      padding-bottom: 19rem;
+      background-size: 140%;
+    }
+    // 智慧农场
+    &.sfarm-crop {
+      padding-bottom: 18rem;
+      background-size: 140%;
+    }
+    &.sfarm-trace {
+      padding-bottom: 24rem;
+      background-size: 150%;
+    }
+    &.sfarm-other {
+      padding-bottom: 16rem;
+      background-size: 150%;
+    }
+  }
+
+  //图文
+  .formatFile{
+    flex-wrap: wrap;
+    ul{
+      .flex(1);
+      .justify_content(space-between);
+      li{
+        margin-bottom: 3rem;
+        &:nth-child(n+5){
+          margin-bottom: 3rem;
+        }
+        &:nth-child(n+7){
+          margin-bottom: 2rem;
+        }
+        a{
+          width: 6rem;
+          height: 8rem;
+          &:hover{
+            p{
+              font-size: @font12;
+              padding: .3rem;
+              line-height: .8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /***** 联系页 start *****/
+  //联系信息
+  .contact_info{
+    display: block;
+    section{
+      width: 100%;
+    }
+  }
+
+  /***** 联系页 end *****/
+
+  /***** 关于页 start *****/
+  .imgs_space_between{
+    ul{
+      li{
+        width: 7rem;
+        img{
+          width: 7rem;
+          height: 5rem;
+        }
+        p{
+          font-size: @font12;
+        }
+      }
+    }
+  }
+
+  /***** 关于页 end *****/
+
+}
+
+@media only screen and (width: 768px) {
+  .header {
+    .slide-1-info {
+      ul {
+        li {
+          b {
+            font-size: 1rem !important;
+          }
+          p {
+            font-size: .6rem !important;
+          }
+        }
+      }
+    }
+    
+  }
+  .dispatching{
+    .semicircle{
+      .flowPath{
+        h3{
+          i{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 20px;
@@ -1574,150 +1731,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
       ul{
         width: 100%;
         .justify_content(space-between);
-        &:last-child li div{
+        &:last-child li{
           margin-bottom: 0;
+        }
+        &:nth-child(3) li{
+          margin-bottom: 1rem;
         }
         li{
           width:6rem;
           height:6rem;
+          //margin-bottom: 1rem;
         }
       }
     }
   }
   /***** 关于页 start*****/
-
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .smartfarm-header .slide-1-info {
-    h2 {
-      text-align: center;
-      font-size: 2.2rem;
-    }
-    ul {
-      text-align: center;
-      li {
-        float: inherit;
-        width: auto;
-        display: inline-block;
-        padding: 0 1rem;
-      }
-    }
-  }
-
-  .farm-list {
-    .farm-description {
-      max-width: 90%;
-    }
-    &.farm-task {
-      padding-bottom: 18rem;
-      background-size: 140%;
-    }
-    &.farm-trace {
-      padding-bottom: 19rem;
-      background-size: 140%;
-    }
-    &.farm-chart {
-      padding-bottom: 19rem;
-      background-size: 140%;
-    }
-    // 智慧农场
-    &.sfarm-crop {
-      padding-bottom: 18rem;
-      background-size: 140%;
-    }
-    &.sfarm-trace {
-      padding-bottom: 24rem;
-      background-size: 150%;
-    }
-    &.sfarm-other {
-      padding-bottom: 16rem;
-      background-size: 150%;
-    }
-  }
-
-  //图文
-  .formatFile{
-    flex-wrap: wrap;
-    ul{
-      .flex(1);
-      .justify_content(space-between);
-      li{
-        margin-bottom: 3rem;
-        &:nth-child(n+5){
-          margin-bottom: 3rem;
-        }
-        &:nth-child(n+7){
-          margin-bottom: 2rem;
-        }
-        a{
-          width: 6rem;
-          height: 8rem;
-          &:hover{
-            p{
-              font-size: @font12;
-              padding: .3rem;
-              line-height: .8rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /***** 联系页 start *****/
-  //联系信息
-  .contact_info{
-    display: block;
-    section{
-      width: 100%;
-    }
-  }
-
-  /***** 联系页 end *****/
-
-  /***** 关于页 start *****/
-  .qualification_honor{
-    ul{
-      li{
-        img{
-          width: 7rem;
-          height: 5rem;
-        }
-      }
-    }
-  }
-
-  /***** 关于页 end *****/
-
-}
-
-@media only screen and (width: 768px) {
-  .header {
-    .slide-1-info {
-      ul {
-        li {
-          b {
-            font-size: 1rem !important;
-          }
-          p {
-            font-size: .6rem !important;
-          }
-        }
-      }
-    }
-    
-  }
-  .dispatching{
-    .semicircle{
-      .flowPath{
-        h3{
-          i{
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
 
 }
 
@@ -1767,17 +1795,25 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   /***** 关于页 start *****/
-  .qualification_honor{
+  .imgs_space_between{
     ul{
       li{
+        width: 8rem;
         img{
           width: 8rem;
           height: 6rem;
+        }
+        p{
+          font-size: @font14;
         }
       }
     }
   }
   /***** 关于页 end *****/
+}
+
+@media only screen and (max-width: 1023px){
+
 }
 
 @media only screen and (width: 1024px) {

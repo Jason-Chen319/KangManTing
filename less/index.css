@@ -1104,8 +1104,23 @@ img {
   width: 27.6rem;
   margin-right: 2rem;
 }
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l.sub_l .bgImg {
+  margin-bottom: 1.2%;
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l.sub_l .smImg {
+  margin-right: 1%;
+  width: 32.66666666666667%;
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l.sub_l .smImg.sub_smImg:nth-child(2) {
+  width: 60%;
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l.sub_l .smImg.sub_smImg:last-child {
+  width: 39%;
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_l.sub_l .smImg:last-child {
+  margin-right: 0;
+}
 .sub_formatFile .sub_formatFile_box .sub_formatFile_l img {
-  vertical-align: bottom;
   float: left;
 }
 .sub_formatFile .sub_formatFile_box .sub_formatFile_l .bgImg {
@@ -1125,10 +1140,22 @@ img {
   font-size: .7rem;
   color: #333;
 }
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_subTit.color_green {
+  color: rgba(51, 177, 79, 0.9);
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_subTit.font16 {
+  font-size: 0.8rem;
+}
 .sub_formatFile .sub_formatFile_box .sub_formatFile_r p {
   font-size: .7rem;
   color: #999;
-  margin: .4rem 0 1.6rem 0;
+  margin: .4rem 0 1rem 0;
+}
+.sub_formatFile .sub_formatFile_box .sub_formatFile_r p.article {
+  color: #333;
+  font-size: 0.8rem;
+  text-indent: 1.6rem;
+  line-height: 1.6rem;
 }
 .sub_formatFile .sub_formatFile_box .sub_formatFile_r p:last-child {
   margin-bottom: 0;
@@ -1156,21 +1183,36 @@ img {
   text-indent: 2em;
   font-size: 0.7rem;
   margin-bottom: 1rem;
+  line-height: 1rem;
 }
 .profile .profile_l div {
-  font-size: 0.7rem;
-  color: #999;
   text-align: right;
 }
 .profile .profile_l div a {
+  font-size: 0.7rem;
+  color: #999;
   display: inline-block;
   padding: .1rem 1rem;
   border: 1px solid #ddd;
   border-radius: 1rem;
 }
+.profile .profile_l .profile_l_b {
+  text-align: left;
+}
+.profile .profile_l .profile_l_b h5 {
+  font-size: 0.8rem;
+  padding-bottom: .2rem;
+  color: rgba(51, 177, 79, 0.9);
+}
+.profile .profile_l .profile_l_b p {
+  text-indent: 0;
+}
 .profile .profile_r img {
   width: 21rem;
   height: 12.5rem;
+}
+.profile .profile_r img.bgSize {
+  height: 17rem;
 }
 .dispatching {
   /* 2009 spec */
@@ -1995,10 +2037,10 @@ footer .footer_box ul li img {
 }
 /***** 联系页 end *****/
 /***** 关于页 start *****/
-.qualification_honor {
+.imgs_space_between {
   padding: 0 4rem;
 }
-.qualification_honor ul {
+.imgs_space_between ul {
   /* 2009 spec */
   display: -webkit-box;
   display: -moz-box;
@@ -2021,12 +2063,24 @@ footer .footer_box ul li img {
   -webkit-justify-content: flex-space-between;
   justify-content: space-between;
 }
-.qualification_honor ul:nth-child(1) li {
+.imgs_space_between ul:last-child li {
+  margin-bottom: 0;
+}
+.imgs_space_between ul li {
+  width: 10rem;
   margin-bottom: 1rem;
 }
-.qualification_honor ul li img {
+.imgs_space_between ul li img {
   width: 10rem;
   height: 8rem;
+}
+.imgs_space_between ul li p {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .enterpriseCulture .sub_formatFile .sub_formatFile_box .sub_formatFile_r .st_subTit {
   font-size: .7rem;
@@ -2125,11 +2179,80 @@ footer .footer_box ul li img {
   width: 80%;
   height: 30%;
 }
+.customerCase {
+  margin-bottom: 2rem;
+}
 /***** 关于页 end *****/
 /***** 配送页 start *****/
-.distributionCenter .sub_formatFile_box .sub_formatFile_r p {
-  text-indent: 1.4rem;
-  line-height: 1.2rem;
+.deliveryCommitment {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 0 4rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+.deliveryCommitment .imgs {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.deliveryCommitment .imgs img {
+  width: 32%;
+  height: 6rem;
+  margin-right: 2%;
+}
+.deliveryCommitment .imgs img:last-child {
+  margin-right: 0;
+}
+.deliveryCommitment .deliveryCommitment_l {
+  width: 50%;
+  padding-right: 1rem;
+}
+.deliveryCommitment .deliveryCommitment_l div {
+  font-size: 0.8rem;
+}
+.deliveryCommitment .deliveryCommitment_l div p {
+  margin-bottom: 1rem;
+}
+.deliveryCommitment .deliveryCommitment_r {
+  width: 50%;
+  padding-left: 1rem;
+}
+.deliveryCommitment .deliveryCommitment_r h5,
+.deliveryCommitment .deliveryCommitment_r h6 {
+  text-align: center;
+  color: rgba(51, 177, 79, 0.9);
+}
+.deliveryCommitment .deliveryCommitment_r h5 {
+  font-size: 1rem;
+}
+.deliveryCommitment .deliveryCommitment_r h6 {
+  font-size: 0.7rem;
+  margin: .5rem 0;
+}
+.deliveryCommitment .deliveryCommitment_r p {
+  font-size: 0.7rem;
+  padding-bottom: .5rem;
 }
 /***** 配送页 end *****/
 /*--服务页面--*/

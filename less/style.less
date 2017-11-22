@@ -302,8 +302,26 @@
       flex: 1 0 auto;
       width: 27.6rem;
       margin-right: 2rem;
+      &.sub_l .bgImg{
+        margin-bottom: 1.2%;
+      }
+      &.sub_l .smImg{
+        margin-right: 1%;
+        width: 32.66666666666667%;
+        &.sub_smImg{
+          &:nth-child(2){
+            width:60%;
+          }
+          &:last-child{
+            width:39%;
+          }
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
       img{
-        vertical-align: bottom;
+        //vertical-align: bottom;
         float:left;
       }
       .bgImg{
@@ -325,11 +343,23 @@
       .st_subTit{
         font-size: .7rem;
         color: #333;
+        &.color_green{
+          color: @color-cgreen;
+        }
+        &.font16{
+          font-size: @font16;
+        }
       }
       p{
         font-size: .7rem;
         color: #999;
-        margin: .4rem 0 1.6rem 0;
+        margin: .4rem 0 1rem 0;
+        &.article{
+          color: #333;
+          font-size: @font16;
+          text-indent: 1.6rem;
+          line-height: 1.6rem;
+        }
         &:last-child{
           margin-bottom: 0;
         }
@@ -350,12 +380,14 @@
       text-indent:2em;
       font-size: @font14;
       margin-bottom: 1rem;
+      line-height: 1rem;
     }
     div{
-      font-size: @font14;
-      color: #999;
+
       text-align: right;
       a{
+        font-size: @font14;
+        color: #999;
         display: inline-block;
         padding: .1rem 1rem;
         //line-height: 1.2rem;
@@ -363,12 +395,25 @@
         border-radius: 1rem;
       }
     }
+    .profile_l_b{
+      text-align: left;
+      h5{
+        font-size: @font16;
+        padding-bottom: .2rem;
+        color: @color-cgreen;
+      }
+      p{
+        text-indent: 0;
+      }
+    }
   }
   .profile_r{
-    //.flex(0);
     img{
       width:21rem;
       height: 12.5rem;
+      &.bgSize{
+        height: 17rem;
+      }
     }
   }
 }
@@ -1142,22 +1187,35 @@ footer{
 /***** 联系页 end *****/
 
 /***** 关于页 start *****/
-.qualification_honor{
-  padding: 0 4rem;
-  ul{
-    .display;
-    .justify_content(space-between );
-    &:nth-child(1) li{
-      margin-bottom: 1rem;
-    }
-    li{
-      img{
+//资质荣誉
+//qualification_honor
+.imgs_space_between{
+    padding: 0 4rem;
+    ul{
+      .display;
+      .justify_content(space-between );
+      &:last-child li{
+        margin-bottom: 0;
+      }
+      li{
         width: 10rem;
-        height: 8rem;
+        margin-bottom: 1rem;
+        img{
+          width: 10rem;
+          height: 8rem;
+        }
+        p{
+          font-size: @font16;
+          padding-top: 1rem;
+          text-align: center;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
       }
     }
   }
-}
+
 
 //企业文化
 .enterpriseCulture{
@@ -1212,18 +1270,67 @@ footer{
   }
 }
 
+//客户案例
+.customerCase{
+  margin-bottom: 2rem;
+}
 
 /***** 关于页 end *****/
 
 /***** 配送页 start *****/
 //大型物流配送中心
 .distributionCenter{
-  .sub_formatFile_box{
-    .sub_formatFile_r{
-      p{
-        text-indent: 1.4rem;
-        line-height: 1.2rem;
+
+}
+//配送承诺
+.deliveryCommitment{
+  .display;
+  padding:0 4rem;
+  max-width:72rem;
+  margin: 0 auto;
+  .imgs{
+    .display;
+    margin-bottom: 1rem;
+    img{
+      width:32%;
+      height: 6rem;
+      margin-right: 2%;
+      &:last-child{
+        margin-right: 0;
       }
+    }
+  }
+  .deliveryCommitment_l{
+    width:50%;
+    padding-right: 1rem;
+    div{
+      //.display;
+      //.justify_content(space-between);
+      //margin-bottom: .5rem;
+      font-size: @font16;
+      p{
+        //min-width: 12rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .deliveryCommitment_r{
+    width:50%;
+    padding-left: 1rem;
+    h5,h6{
+      text-align: center;
+      color: @color-cgreen;
+    }
+    h5{
+      font-size: @font20;
+    }
+    h6{
+      font-size: @font14;
+      margin: .5rem 0;
+    }
+    p{
+      font-size: @font14;
+      padding-bottom:.5rem;
     }
   }
 }

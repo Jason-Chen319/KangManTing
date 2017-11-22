@@ -228,7 +228,10 @@ html {
     -webkit-justify-content: flex-space-between;
     justify-content: space-between;
   }
-  .supplier .trademarks ul:last-child li div {
+  .supplier .trademarks ul:nth-child(3) li {
+    margin-bottom: 1rem;
+  }
+  .supplier .trademarks ul:last-child li {
     margin-bottom: 0;
   }
   .supplier .trademarks ul li {
@@ -358,7 +361,10 @@ html {
     -webkit-justify-content: flex-space-between;
     justify-content: space-between;
   }
-  .supplier .trademarks ul:last-child li div {
+  .supplier .trademarks ul:nth-child(3) li {
+    margin-bottom: 1rem;
+  }
+  .supplier .trademarks ul:last-child li {
     margin-bottom: 0;
   }
   .supplier .trademarks ul li {
@@ -372,28 +378,33 @@ html {
     font-size: 18px;
   }
   /***** 关于页 start *****/
-  .qualification_honor {
+  .imgs_space_between {
     padding: 0;
   }
-  .qualification_honor ul {
+  .imgs_space_between ul {
     width: 90%;
     margin: 0 auto;
     flex-flow: wrap;
     -ms-flex-flow: wrap;
   }
-  .qualification_honor ul:last-child li {
+  .imgs_space_between ul:last-child li {
     margin-bottom: 1rem;
   }
-  .qualification_honor ul:last-child li:nth-child(n+3) {
+  .imgs_space_between ul:last-child li:nth-child(n+3) {
     margin: 0;
   }
-  .qualification_honor ul li {
+  .imgs_space_between ul li {
     width: 50%;
     text-align: center;
   }
-  .qualification_honor ul li img {
+  .imgs_space_between ul li img {
     width: 7rem;
     height: 5rem;
+  }
+  .imgs_space_between ul li p {
+    width: 7rem;
+    margin: 0 auto;
+    font-size: 0.6rem;
   }
   /***** 关于页 end *****/
 }
@@ -493,16 +504,22 @@ html {
     display: inline-block;
   }
   /***** 关于页 start *****/
-  .qualification_honor {
+  .imgs_space_between {
     padding: 0;
   }
-  .qualification_honor ul {
+  .imgs_space_between ul {
     width: 90%;
     margin: 0 auto;
   }
-  .qualification_honor ul li img {
+  .imgs_space_between ul li {
+    width: 6rem;
+  }
+  .imgs_space_between ul li img {
     width: 6rem;
     height: 4rem;
+  }
+  .imgs_space_between ul li p {
+    font-size: 0.6rem;
   }
   .supplier .trademarks {
     padding: 1rem 0 0;
@@ -523,7 +540,10 @@ html {
     -webkit-justify-content: flex-space-between;
     justify-content: space-between;
   }
-  .supplier .trademarks ul:last-child li div {
+  .supplier .trademarks ul:nth-child(3) li {
+    margin-bottom: 1rem;
+  }
+  .supplier .trademarks ul:last-child li {
     margin-bottom: 0;
   }
   .supplier .trademarks ul li {
@@ -646,7 +666,6 @@ html {
     height: 2.5rem;
   }
   .header .menu li a.active {
-    color: #47b85f !important;
     background: rgba(71, 184, 95, 0);
     border-bottom: 1px solid #f2f2f2;
     height: 2.5rem;
@@ -1187,6 +1206,116 @@ html {
     width: 30%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .smartfarm-header .slide-1-info h2 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .smartfarm-header .slide-1-info ul {
+    text-align: center;
+  }
+  .smartfarm-header .slide-1-info ul li {
+    float: inherit;
+    width: auto;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  .farm-list .farm-description {
+    max-width: 90%;
+  }
+  .farm-list.farm-task {
+    padding-bottom: 18rem;
+    background-size: 140%;
+  }
+  .farm-list.farm-trace {
+    padding-bottom: 19rem;
+    background-size: 140%;
+  }
+  .farm-list.farm-chart {
+    padding-bottom: 19rem;
+    background-size: 140%;
+  }
+  .farm-list.sfarm-crop {
+    padding-bottom: 18rem;
+    background-size: 140%;
+  }
+  .farm-list.sfarm-trace {
+    padding-bottom: 24rem;
+    background-size: 150%;
+  }
+  .farm-list.sfarm-other {
+    padding-bottom: 16rem;
+    background-size: 150%;
+  }
+  .formatFile {
+    flex-wrap: wrap;
+  }
+  .formatFile ul {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .formatFile ul li {
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+5) {
+    margin-bottom: 3rem;
+  }
+  .formatFile ul li:nth-child(n+7) {
+    margin-bottom: 2rem;
+  }
+  .formatFile ul li a {
+    width: 6rem;
+    height: 8rem;
+  }
+  .formatFile ul li a:hover p {
+    font-size: 0.6rem;
+    padding: .3rem;
+    line-height: .8rem;
+  }
+  /***** 联系页 start *****/
+  .contact_info {
+    display: block;
+  }
+  .contact_info section {
+    width: 100%;
+  }
+  /***** 联系页 end *****/
+  /***** 关于页 start *****/
+  .imgs_space_between ul li {
+    width: 7rem;
+  }
+  .imgs_space_between ul li img {
+    width: 7rem;
+    height: 5rem;
+  }
+  .imgs_space_between ul li p {
+    font-size: 0.6rem;
+  }
+  /***** 关于页 end *****/
+}
+@media only screen and (width: 768px) {
+  .header .slide-1-info ul li b {
+    font-size: 1rem !important;
+  }
+  .header .slide-1-info ul li p {
+    font-size: .6rem !important;
+  }
+  .dispatching .semicircle .flowPath h3 i {
+    display: inline-block;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 20px;
@@ -1395,118 +1524,17 @@ html {
     -webkit-justify-content: flex-space-between;
     justify-content: space-between;
   }
-  .supplier .trademarks ul:last-child li div {
+  .supplier .trademarks ul:last-child li {
     margin-bottom: 0;
+  }
+  .supplier .trademarks ul:nth-child(3) li {
+    margin-bottom: 1rem;
   }
   .supplier .trademarks ul li {
     width: 6rem;
     height: 6rem;
   }
   /***** 关于页 start*****/
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .smartfarm-header .slide-1-info h2 {
-    text-align: center;
-    font-size: 2.2rem;
-  }
-  .smartfarm-header .slide-1-info ul {
-    text-align: center;
-  }
-  .smartfarm-header .slide-1-info ul li {
-    float: inherit;
-    width: auto;
-    display: inline-block;
-    padding: 0 1rem;
-  }
-  .farm-list .farm-description {
-    max-width: 90%;
-  }
-  .farm-list.farm-task {
-    padding-bottom: 18rem;
-    background-size: 140%;
-  }
-  .farm-list.farm-trace {
-    padding-bottom: 19rem;
-    background-size: 140%;
-  }
-  .farm-list.farm-chart {
-    padding-bottom: 19rem;
-    background-size: 140%;
-  }
-  .farm-list.sfarm-crop {
-    padding-bottom: 18rem;
-    background-size: 140%;
-  }
-  .farm-list.sfarm-trace {
-    padding-bottom: 24rem;
-    background-size: 150%;
-  }
-  .farm-list.sfarm-other {
-    padding-bottom: 16rem;
-    background-size: 150%;
-  }
-  .formatFile {
-    flex-wrap: wrap;
-  }
-  .formatFile ul {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    /*水平居中*/
-    /*老版本语法*/
-    -webkit-box-pack: space-between;
-    -moz-box-pack: space-between;
-    /*混合版本语法*/
-    -ms-flex-pack: space-between;
-    /*新版本语法*/
-    -webkit-justify-content: flex-space-between;
-    justify-content: space-between;
-  }
-  .formatFile ul li {
-    margin-bottom: 3rem;
-  }
-  .formatFile ul li:nth-child(n+5) {
-    margin-bottom: 3rem;
-  }
-  .formatFile ul li:nth-child(n+7) {
-    margin-bottom: 2rem;
-  }
-  .formatFile ul li a {
-    width: 6rem;
-    height: 8rem;
-  }
-  .formatFile ul li a:hover p {
-    font-size: 0.6rem;
-    padding: .3rem;
-    line-height: .8rem;
-  }
-  /***** 联系页 start *****/
-  .contact_info {
-    display: block;
-  }
-  .contact_info section {
-    width: 100%;
-  }
-  /***** 联系页 end *****/
-  /***** 关于页 start *****/
-  .qualification_honor ul li img {
-    width: 7rem;
-    height: 5rem;
-  }
-  /***** 关于页 end *****/
-}
-@media only screen and (width: 768px) {
-  .header .slide-1-info ul li b {
-    font-size: 1rem !important;
-  }
-  .header .slide-1-info ul li p {
-    font-size: .6rem !important;
-  }
-  .dispatching .semicircle .flowPath h3 i {
-    display: inline-block;
-  }
 }
 @media only screen and (min-width: 960px) and (max-width: 1023px) {
   .smartfarm-header .slide-1-info h2 {
@@ -1548,9 +1576,15 @@ html {
     background-size: 150%;
   }
   /***** 关于页 start *****/
-  .qualification_honor ul li img {
+  .imgs_space_between ul li {
+    width: 8rem;
+  }
+  .imgs_space_between ul li img {
     width: 8rem;
     height: 6rem;
+  }
+  .imgs_space_between ul li p {
+    font-size: 0.7rem;
   }
   /***** 关于页 end *****/
 }
