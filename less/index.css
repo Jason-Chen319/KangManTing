@@ -2240,7 +2240,6 @@ footer .footer_box ul li img {
 }
 .deliveryCommitment .deliveryCommitment_r h5,
 .deliveryCommitment .deliveryCommitment_r h6 {
-  text-align: center;
   color: rgba(51, 177, 79, 0.9);
 }
 .deliveryCommitment .deliveryCommitment_r h5 {
@@ -2253,6 +2252,97 @@ footer .footer_box ul li img {
 .deliveryCommitment .deliveryCommitment_r p {
   font-size: 0.7rem;
   padding-bottom: .5rem;
+  line-height: 1rem;
+}
+.distributionTypes {
+  padding: 0 3.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.distributionTypes ul {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  /*混合版本语法*/
+  -ms-flex-pack: space-around;
+  /*新版本语法*/
+  -webkit-justify-content: flex-space-around;
+  justify-content: space-around;
+}
+.distributionTypes ul:first-child {
+  width: 57.14285714285714%;
+}
+.distributionTypes ul:last-child {
+  width: 42.85714285714286%;
+}
+.distributionTypes ul li div {
+  width: 7rem;
+}
+.distributionTypes ul li div img {
+  width: 7rem;
+  height: 7rem;
+}
+.distributionTypes ul li div div {
+  background: rgba(51, 177, 79, 0.9);
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.distributionTypes ul li div p {
+  /* 2009 spec */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  /* 混合 */
+  display: -ms-flexbox;
+  /* 新版语法*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  /*水平居中*/
+  /*老版本语法*/
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  /*混合版本语法*/
+  -ms-flex-pack: space-between;
+  /*新版本语法*/
+  -webkit-justify-content: flex-space-between;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-top: .5rem;
+}
+.distributionTypes ul li div p span {
+  padding: 0 .2rem;
 }
 /***** 配送页 end *****/
 /*--服务页面--*/

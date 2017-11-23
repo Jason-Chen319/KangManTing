@@ -1318,7 +1318,7 @@ footer{
     width:50%;
     padding-left: 1rem;
     h5,h6{
-      text-align: center;
+      //text-align: center;
       color: @color-cgreen;
     }
     h5{
@@ -1331,6 +1331,52 @@ footer{
     p{
       font-size: @font14;
       padding-bottom:.5rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+//配送类别
+.distributionTypes{
+  padding: 0 3.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  .display;
+  ul{
+    .display;
+    .justify_content(space-around);
+    &:first-child{
+       width: 57.14285714285714%;
+
+    }
+    &:last-child{
+      width: 42.85714285714286%;
+    }
+    li{
+      div{
+        width: 7rem;
+        img{
+          width: 7rem;
+          height: 7rem;
+        }
+        div{
+          background: @color-cgreen;
+          font-size: @font16;
+          color: #fff;
+          text-align: center;
+          line-height: 1.4rem;
+        }
+        p{
+          .display;
+          .flex_flow;
+          .justify_content(space-between);
+          font-size: @font14;
+          margin-top: .5rem;
+          span{
+            padding: 0 .2rem;
+          }
+        }
+      }
     }
   }
 }

@@ -239,6 +239,42 @@ html {
     height: 4rem;
   }
   /***** 关于页 end *****/
+  .deliveryCommitment {
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .deliveryCommitment .deliveryCommitment_l {
+    width: 100%;
+    padding-right: 0;
+  }
+  .deliveryCommitment .deliveryCommitment_l div {
+    /* 2009 spec */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    /* 混合 */
+    display: -ms-flexbox;
+    /* 新版语法*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .deliveryCommitment .deliveryCommitment_l div p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .deliveryCommitment .deliveryCommitment_r {
+    width: 100%;
+    padding-left: 0;
+  }
+  /***** 配送页 end *****/
 }
 @media only screen and (min-width: 480px) and (max-width: 567px) {
   html {
@@ -372,6 +408,116 @@ html {
     height: 5rem;
   }
   /***** 关于页 end *****/
+}
+@media only screen and (max-width: 666px) {
+  html {
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  .distributionTypes {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .distributionTypes ul {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .distributionTypes ul:first-child {
+    width: 100%;
+  }
+  .distributionTypes ul:last-child {
+    width: 100%;
+  }
+  .distributionTypes ul:last-child li:last-child {
+    margin-bottom: 0;
+  }
+  .distributionTypes ul li {
+    width: 50%;
+    /* 2009 spec */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    /* 混合 */
+    display: -ms-flexbox;
+    /* 新版语法*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    /*混合版本语法*/
+    -ms-flex-pack: center;
+    /*新版本语法*/
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .distributionTypes ul li div {
+    width: 7rem;
+  }
+  .distributionTypes ul li div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  /***** 配送页 end ******/
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  .deliveryCommitment {
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .deliveryCommitment .deliveryCommitment_l {
+    width: 100%;
+    padding-right: 0;
+  }
+  .deliveryCommitment .deliveryCommitment_l div {
+    /* 2009 spec */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    /* 混合 */
+    display: -ms-flexbox;
+    /* 新版语法*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .deliveryCommitment .deliveryCommitment_l div p {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .deliveryCommitment .deliveryCommitment_r {
+    width: 100%;
+    padding-left: 0;
+  }
+  /***** 配送页 end *****/
 }
 @media only screen and (max-width: 567px) {
   html {
@@ -551,6 +697,45 @@ html {
     height: 5.5rem;
   }
   /***** 关于页 end *****/
+}
+@media only screen and (min-width: 667px) and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  .distributionTypes {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .distributionTypes ul {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .distributionTypes ul:first-child {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .distributionTypes ul:last-child {
+    width: 100%;
+  }
+  .distributionTypes ul li div {
+    width: 7rem;
+  }
+  .distributionTypes ul li div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  /***** 配送页 end ******/
 }
 @media only screen and (max-width: 767px) {
   html {
@@ -1143,12 +1328,15 @@ html {
     width: 50%;
   }
   .formatFile ul li a {
-    width: 6rem;
-    height: 8rem;
+    width: 7rem;
+    height: 9rem;
   }
   .formatFile ul li a:hover .mask,
   .formatFile ul li a:hover p {
     display: none;
+  }
+  .formatFile ul li a h2 {
+    font-size: 0.9rem;
   }
   .sub_formatFile {
     height: auto;
@@ -1276,8 +1464,8 @@ html {
     margin-bottom: 2rem;
   }
   .formatFile ul li a {
-    width: 6rem;
-    height: 8rem;
+    width: 7rem;
+    height: 9rem;
   }
   .formatFile ul li a:hover p {
     font-size: 0.6rem;
@@ -1304,6 +1492,37 @@ html {
     font-size: 0.6rem;
   }
   /***** 关于页 end *****/
+  /***** 配送页 start *****/
+  .distributionTypes {
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .distributionTypes ul {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .distributionTypes ul:first-child {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .distributionTypes ul:last-child {
+    width: 100%;
+  }
+  .distributionTypes ul li div {
+    width: 7rem;
+  }
+  .distributionTypes ul li div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  /***** 配送页 end ******/
 }
 @media only screen and (width: 768px) {
   .header .slide-1-info ul li b {
@@ -1506,6 +1725,40 @@ html {
     display: inline-block;
   }
   /***** 首页 end *****/
+  /***** 配送页 start *****/
+  .deliveryCommitment {
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .deliveryCommitment .deliveryCommitment_l {
+    width: 100%;
+    padding-right: 0;
+  }
+  .deliveryCommitment .deliveryCommitment_l div {
+    /* 2009 spec */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    /* 混合 */
+    display: -ms-flexbox;
+    /* 新版语法*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .deliveryCommitment .deliveryCommitment_l div p {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .deliveryCommitment .deliveryCommitment_r {
+    width: 100%;
+    padding-left: 0;
+  }
+  /***** 配送页 end *****/
   /***** 关于页 start*****/
   .supplier .trademarks {
     padding: 2rem 4rem 0;
@@ -1636,6 +1889,42 @@ html {
     width: 100%;
     margin-bottom: 1rem;
   }
+}
+@media only screen and (min-width: 959px) and (max-width: 1279px) {
+  html {
+    font-size: 20px;
+  }
+  /***** 配送页 start *****/
+  .distributionTypes {
+    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+  }
+  .distributionTypes ul {
+    /*水平居中*/
+    /*老版本语法*/
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    /*混合版本语法*/
+    -ms-flex-pack: space-between;
+    /*新版本语法*/
+    -webkit-justify-content: flex-space-between;
+    justify-content: space-between;
+  }
+  .distributionTypes ul:first-child {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .distributionTypes ul:last-child {
+    width: 100%;
+  }
+  .distributionTypes ul li div {
+    width: 8rem;
+  }
+  .distributionTypes ul li div img {
+    width: 8rem;
+    height: 8rem;
+  }
+  /***** 配送页 end ******/
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .dispatching {

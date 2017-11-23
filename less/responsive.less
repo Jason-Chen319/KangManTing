@@ -211,6 +211,31 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
   /***** 关于页 end *****/
+
+  //配送承诺
+  .deliveryCommitment{
+    .flex_flow;
+    padding:0;
+    width:90%;
+    margin: 0 auto;
+    .deliveryCommitment_l{
+      width:100%;
+      padding-right: 0;
+      div{
+        .display;
+        .flex_flow;
+        p{
+          width:100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .deliveryCommitment_r{
+      width:100%;
+      padding-left: 0;
+    }
+  }
+  /***** 配送页 end *****/
 }
 
 @media only screen and (min-width: 480px) and (max-width: 567px){
@@ -368,7 +393,76 @@ and (-webkit-min-device-pixel-ratio: 2) {
   /***** 关于页 end *****/
 }
 
+@media only screen and (max-width: 666px){
+  html{
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  //配送类别
+  .distributionTypes{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    .flex_flow;
+    ul{
+      .justify_content(space-between);
+      .flex_flow;
+      &:first-child{
+        width: 100%;
+      }
+      &:last-child{
+        width: 100%;
+        li:last-child{
+          margin-bottom:0;
+        }
+      }
+      li{
+        width: 50%;
+        .display;
+        .justify_content_center;
+        margin-bottom: 1rem;
+        div{
+          width: 7rem;
+          img{
+            width: 7rem;
+            height: 7rem;
+          }
+        }
+      }
+    }
+  }
+  /***** 配送页 end ******/
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px){
+  html{
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  //配送承诺
+  .deliveryCommitment{
+    .flex_flow;
+    padding:0;
+    width:90%;
+    margin: 0 auto;
+    .deliveryCommitment_l{
+      width:100%;
+      padding-right: 0;
+      div{
+        .display;
+        .flex_flow;
+        p{
+          width:50%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .deliveryCommitment_r{
+      width:100%;
+      padding-left: 0;
+    }
+  }
+  /***** 配送页 end *****/
 }
 
 @media only screen and (max-width: 567px){
@@ -407,6 +501,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   /***** 关于页 end *****/
 }
+
 
 @media only screen and (min-width: 568px) and (max-width: 767px){
   html{
@@ -574,6 +669,41 @@ and (-webkit-min-device-pixel-ratio: 2) {
   /***** 关于页 end *****/
 
 }
+
+@media only screen and (min-width: 667px) and (max-width: 767px){
+  html{
+    font-size: 18px;
+  }
+  /***** 配送页 start *****/
+  //配送类别
+  .distributionTypes{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    .flex_flow;
+    ul{
+      .justify_content(space-between);
+      &:first-child{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      &:last-child{
+        width: 100%;
+      }
+      li{
+        div{
+          width: 7rem;
+          img{
+            width: 7rem;
+            height: 7rem;
+          }
+        }
+      }
+    }
+  }
+  /***** 配送页 end ******/
+}
+
 
 @media only screen and (max-width: 767px) {
   html {
@@ -1250,12 +1380,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-bottom: 3rem;
         width:50%;
         a{
-          width: 6rem;
-          height: 8rem;
+          width: 7rem;
+          height: 9rem;
           &:hover{
             .mask, p{
               display: none;
             }
+          }
+          h2{
+            font-size: @font18;
           }
         }
       }
@@ -1312,6 +1445,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   /***** 联系页 end *****/
+
 
 
 }
@@ -1402,8 +1536,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
           margin-bottom: 2rem;
         }
         a{
-          width: 6rem;
-          height: 8rem;
+          width: 7rem;
+          height: 9rem;
           &:hover{
             p{
               font-size: @font12;
@@ -1445,6 +1579,31 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   /***** 关于页 end *****/
 
+  /***** 配送页 start *****/
+  //配送类别
+  .distributionTypes{
+    .flex_flow;
+    ul{
+      .justify_content(space-between);
+      &:first-child{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      &:last-child{
+        width: 100%;
+      }
+      li{
+        div{
+          width: 7rem;
+          img{
+            width: 7rem;
+            height: 7rem;
+          }
+        }
+      }
+    }
+  }
+  /***** 配送页 end ******/
 }
 
 @media only screen and (width: 768px) {
@@ -1722,6 +1881,64 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   /***** 首页 end *****/
 
+  /***** 配送页 start *****/
+  //配送承诺
+  .deliveryCommitment{
+    .flex_flow;
+    //.display;
+    //padding:0 4rem;
+    //max-width:72rem;
+    //margin: 0 auto;
+    //.imgs{
+    //  .display;
+    //  margin-bottom: 1rem;
+    //  img{
+    //    width:32%;
+    //    height: 6rem;
+    //    margin-right: 2%;
+    //    &:last-child{
+    //      margin-right: 0;
+    //    }
+    //  }
+    //}
+    .deliveryCommitment_l{
+      width:100%;
+      padding-right: 0;
+      div{
+        .display;
+        .flex_flow;
+        //.justify_content(space-between);
+        //margin-bottom: .5rem;
+        //font-size: @font16;
+        p{
+          width:50%;
+          //min-width: 12rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .deliveryCommitment_r{
+      width:100%;
+      padding-left: 0;
+      h5,h6{
+        //text-align: center;
+        //color: @color-cgreen;
+      }
+      h5{
+        //font-size: @font20;
+      }
+      h6{
+        //font-size: @font14;
+        //margin: .5rem 0;
+      }
+      p{
+        //font-size: @font14;
+        //padding-bottom:.5rem;
+      }
+    }
+  }
+  /***** 配送页 end *****/
+
   /***** 关于页 start*****/
   //品牌供应商
   .supplier{
@@ -1810,6 +2027,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
   /***** 关于页 end *****/
+
 }
 
 @media only screen and (max-width: 1023px){
@@ -1863,8 +2081,40 @@ and (-webkit-min-device-pixel-ratio: 2) {
       }
     }
   }
-
 }
+
+
+@media only screen and (min-width: 959px) and (max-width: 1279px){
+  html{
+    font-size: 20px;
+  }
+  /***** 配送页 start *****/
+  //配送类别
+  .distributionTypes{
+    .flex_flow;
+    ul{
+      .justify_content(space-between);
+      &:first-child{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      &:last-child{
+        width: 100%;
+      }
+      li{
+        div{
+          width: 8rem;
+          img{
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+      }
+    }
+  }
+  /***** 配送页 end ******/
+}
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px){
   //物流配送

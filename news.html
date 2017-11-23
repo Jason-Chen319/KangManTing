@@ -16,86 +16,74 @@
     <!-- 为移动设备添加 viewport -->
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=3,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,target-densityDpi=medium-dpi, minimal-ui"/>
-    <title>智慧农业 - 首页 - 开启农业全程信息化时代</title>
+    <title>康满庭 - 首页</title>
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="less/index.css">
     <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="less/responsive.css">
+
     <script type="text/javascript">
         function preloader() {
             if (document.getElementById) {
-                document.getElementById("slide0").style.background = "url(img/newss.jpg) no-repeat center";
+                document.getElementById("slide0").style.background = "url(img/about.jpg) no-repeat center";
             }
-        }
-        function addLoadEvent(func) {
-            var oldonload = window.onload;
-            if (typeof window.onload != 'function') {
-                window.onload = func;
-            } else {
-                window.onload = function () {
-                    if (oldonload) {
-                        oldonload();
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function () {
+                        if (oldonload) {
+                            oldonload();
+                        }
+                        func()
                     }
-                    func();
                 }
             }
+            addLoadEvent(preloader);
         }
-        addLoadEvent(preloader);
     </script>
 </head>
 
 <body ontouchstart="return true;">
 
 <!--头部-->
-<article class="header news-header">
+<article class="header service-header">
+    <div class="header-top">
+        <!--logo-->
+        <a href="index.html">
+            <img src="img/logo.jpg"  class="logo">
+        </a>
+        <!--菜单栏-->
+        <nav class="menu">
+            <i class="icon-menu" id="menu"></i>
+            <ul class="menubox" id="menubox">
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="service.html" class="active">服务</a>
+                    <!--<div class="submenu">-->
+                    <!--<a href="farmcrop.html">种植管理平台</a>-->
+                    <!--<a href="smartfarm.html">智慧农场</a>-->
+                    <!--</div>-->
+                </li>
+                <li><a href="dispatching.html">配送</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="contact.html" class="appdown">联系</a></li>
+                <!--<span class="bar"></span>-->
+                <!--<button class="icon-close"></button>-->
+            </ul>
+            <section class="menubackground"></section>
+        </nav>
+    </div>
 
-    <a href="index.html">
-        <h1 class="icon-logo" id="logo">
-            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-                class="path4"></span><span class="path5"></span><span class="path6"></span><span
-                class="path7"></span><span
-                class="path8"></span><span class="path9"></span><span class="path10"></span><span
-                class="path11"></span><span class="path12"></span><span class="path13"></span><span
-                class="path14"></span><span class="path15"></span><span class="path16"></span><span
-                class="path17"></span><span class="path18"></span><span class="path19"></span><span
-                class="path20"></span><span class="path21"></span><span class="path22"></span><span
-                class="path23"></span><span class="path24"></span>
-        </h1>
-    </a>
-    <!--菜单栏-->
-    <nav class="menu">
-        <i class="icon-menu" id="menu"></i>
-        <ul class="menubox" id="menubox">
-            <li><a href="index.html">首页</a></li>
-            <li>
-                <a href="service.html">服务</a>
-                <div class="submenu">
-                    <a href="farmcrop.html">种植管理平台</a>
-                    <a href="smartfarm.html">智慧农场</a>
-                </div>
-            </li>
-            <li><a href="news.html" class="active">动态</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="#" class="appdown">手机APP</a></li>
-            <span class="bar"></span>
-            <button class="icon-close"></button>
-        </ul>
-        <section class="menubackground"></section>
-    </nav>
 
     <!--背景-->
-    <div class="slide-1-info fade-from-on-to-down fadeshow">
-        <h2 class="fadein fonts">新闻动态</h2>
-        <!--<h3 class="fadein">Open The Whole Agricultural Information Age</h3>
-        <button class="fadein" onClick="alert('我被鼠标点中了！')">注册体验</button> -->
-    </div>
-    <div class="head-background-layer fadeIn"></div>
     <div class="head-background"
-         style="background: url(img/news.jpg) no-repeat center; background-size: cover;"></div>
-    <div class="head-background" id="slide0"></div>
+         style="background: url(img/about.jpg) no-repeat center bottom; background-size: cover;"></div>
+    <div class="head-background" id="background-img"></div>
 
 </article>
-
 <!--公司新闻-->
 
 <article class="articlebox">
@@ -208,44 +196,30 @@
 </article>
 
 <!--底部导航-->
-<footer>
-    <article class="footernavbox">
-        <dl>
-            <dt>服务</dt>
-            <dd><a href="service.html#top1" title="种植系统">种植系统</a></dd>
-            <dd><a href="service.html#top2" title="ERP系统">ERP系统</a></dd>
-            <dd><a href="service.html#top3" title="农资交易">农资交易</a></dd>
-            <dd><a href="service.html#top4" title="采购平台">采购平台</a></dd>
-            <dd><a href="service.html#top5" title="政府监管">政府监管</a></dd>
-            <dd><a href="service.html#top6" title="智能设备">智能设备</a></dd>
-        </dl>
-        <dl>
-            <dt>关于</dt>
-            <dd><a href="about.html#top1" title="关于我们">关于我们</a></dd>
-            <dd><a href="about.html#top2" title="加入我们">加入我们</a></dd>
-            <dd><a href="about.html#top3" title="联系我们">联系我们</a></dd>
-        </dl>
-        <dl>
-            <dt>农业</dt>
-            <dd><a href="#" title="农业百科">农业百科</a></dd>
-            <dd><a href="#" title="技术前沿">技术前沿</a></dd>
-            <dd><a href="#" title="我是农场">我是农场</a></dd>
-            <dd><a href="#" title="我要采购">我要采购</a></dd>
-            <dd><a href="#" title="我有农资">我有农资</a></dd>
-        </dl>
-        <dl>
-            <dt>商务合作</dt>
-            <dd>邮箱：hello@visfarm.net</dd>
-            <dd>网址：<a href="http://www.visfarm.com">www.visfarm.com</a></dd>
-            <dd>座机：（+86）020-8466 1895</dd>
-            <dd>手机：135-1278-7799（谭先生）</dd>
-            <dd>地址：广州市番禺区沙头街银平路98号Ｃ栋6楼</dd>
-        </dl>
-        <div class="code">
-            <img src="img/code.png" alt="智慧农业微信公众号"/>
+<footer class="footer">
+    <div class="footer_box">
+        <div>
+            <p class="copyright">
+                CopyRight &copy; 2016-2017 智慧农业 版权所有 粤ICP备15101694号
+            </p>
+            <p>
+                <span>座机：(+86)020-8466 1895</span>
+                <span>手机：135-1278-7799(谭先生)</span>
+                <span>
+                地址：广州市番禺区沙头街道98号C栋6楼
+            </span>
+            </p>
         </div>
-    </article>
-    <article class="copyright">CopyRight &copy; 2015-2017 <a href="http://www.visfarm.com" class="">智慧农业</a> 版权所有 粤ICP备15101694号</article>
+        <ul>
+            <li><img src="img/pic01.jpg" alt=""></li>
+            <li><img src="img/pic02.jpg" alt=""></li>
+            <li><img src="img/pic03.jpg" alt=""></li>
+            <li><img src="img/pic04.jpg" alt=""></li>
+            <li><img src="img/pic01.jpg" alt=""></li>
+            <li><img src="img/pic01.jpg" alt=""></li>
+        </ul>
+    </div>
+
 </footer>
 
 <!--手机APP下载-->
