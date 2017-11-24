@@ -31,6 +31,113 @@ html {
   .history-wrapper {
     top: 120px;
   }
+
+  //客户案例
+  .clientCase{
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    .slide{
+      position: relative;
+      padding: 0 2rem;
+      &:hover{
+        .arrow{
+          display: block;
+        }
+      }
+      .arrow{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 5rem;
+        line-height: 5rem;
+        width: 1.5rem;
+        display: none;
+        &:hover{
+          cursor: pointer;
+        }
+        &.right{
+          left:initial;
+          right: 0;
+        }
+        &.active{
+          span{
+            //color: #999;
+            opacity: .35;
+          }
+        }
+        span{
+          font-size: 1.5rem;
+          color: #ddd;
+        }
+      }
+      ul{
+        .display;
+        .justify_content(space-between);
+        overflow: hidden;
+        li{
+          margin-right: 1.8rem;
+          a{
+            .display;
+            position: relative;
+            &:hover{
+              cursor: pointer;
+              .mask, span{
+                display: block;
+              }
+            }
+            img{
+              width: 6.4rem;
+              height: 5rem;
+            }
+            .mask{
+              position: absolute;
+              top:0;
+              width:100%;
+              height:100%;
+              background:#000;
+              opacity: .6;
+              display: none;
+            }
+            p{
+              position: absolute;
+              width:100%;
+              height:100%;
+              font-size: @font14;
+              //line-height: 1rem;
+              padding:0 1rem;
+              color: #fff;
+              .display;
+              .justify_content_center;
+              .align_items_center;
+              span{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .toggle{
+      position: absolute;
+      bottom: -.35rem;
+      left: 50%;
+      margin-left: -2.1rem;
+      width: 4.2rem;
+      span{
+        display: inline-block;
+        width: 1.5rem;
+        border-top: 2px solid #ddd;
+        margin-right: 1.2rem;
+        &:last-child{
+          margin-right: 0;
+        }
+        &.active{
+          border-color: red;
+        }
+      }
+    }
+  }
 }
 
 /*-- 兼容iphone6 plus --------------------------------------------*/
@@ -1214,6 +1321,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         flex: 1;
       }
       section:nth-child(2) {
+        padding-top: 1.6rem;
         text-align: center;
         font-size: @font14;
         h4 {
@@ -1361,6 +1469,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 1rem;
   }
 
+  /***** 首页 start *****/
+
   //图文
   .formatFile{
     flex-wrap: wrap;
@@ -1421,6 +1531,114 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin: 0 auto;
     padding:0;
   }
+
+  //客户案例
+  .clientCase{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto 3rem;
+    position: relative;
+    .slide{
+      position: relative;
+      padding: 0 2rem;
+      &:hover{
+        .arrow{
+          display: block;
+        }
+      }
+      .arrow{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 3.6rem;
+        line-height: 3.6rem;
+        width: 1.5rem;
+        display: block;
+        &:hover{
+          cursor: pointer;
+        }
+        &.right{
+          left:initial;
+          right: 0;
+        }
+        &.active{
+          span{
+            //color: #999;
+            opacity: .35;
+          }
+        }
+        span{
+          font-size: 1.5rem;
+          color: #ddd;
+        }
+      }
+      ul{
+        .display;
+        overflow: hidden;
+        li{
+          margin-right: 1.8rem;
+          a{
+            .display;
+            position: relative;
+            &:hover{
+              cursor: pointer;
+              .mask, span{
+                display: none;
+              }
+            }
+            img{
+              width: 5rem;
+              height: 3.6rem;
+            }
+            .mask{
+              position: absolute;
+              top:0;
+              width:100%;
+              height:100%;
+              background:#000;
+              opacity: .6;
+              display: none;
+            }
+            p{
+              position: absolute;
+              width:100%;
+              height:100%;
+              font-size: @font14;
+              //line-height: 1rem;
+              padding:0 1rem;
+              color: #fff;
+              .display;
+              .justify_content_center;
+              .align_items_center;
+              span{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .toggle{
+      position: absolute;
+      bottom: -.35rem;
+      left: 50%;
+      margin-left: -2.1rem;
+      width: 4.2rem;
+      span{
+        display: inline-block;
+        width: 1.5rem;
+        border-top: 2px solid #ddd;
+        margin-right: 1.2rem;
+        &:last-child{
+          margin-right: 0;
+        }
+        &.active{
+          border-color: red;
+        }
+      }
+    }
+  }
+  /***** 首页 end *****/
 
   footer{
     .footer_box{
@@ -1622,6 +1840,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
     
   }
+
+
+  /****** 首页 start *****/
+  //配送
   .dispatching{
     .semicircle{
       .flowPath{
@@ -1634,6 +1856,94 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 
+  //客户案例
+  .clientCase{
+    //padding: 0 1.5rem;
+    //margin-bottom: 3rem;
+    //position: relative;
+    .slide{
+      //position: relative;
+      //padding: 0 2rem;
+      &:hover{
+        .arrow{
+          display: block;
+        }
+      }
+      //.arrow{
+      //  position: absolute;
+      //  top:0;
+      //  left: 0;
+      //  height: 5rem;
+      //  line-height: 5rem;
+      //  width: 1.5rem;
+      //  display: block;
+      //  &:hover{
+      //    cursor: pointer;
+      //  }
+      //  &.right{
+      //    left:initial;
+      //    right: 0;
+      //  }
+      //  &.active{
+      //    span{
+      //      //color: #999;
+      //      opacity: .35;
+      //    }
+      //  }
+      //  span{
+      //    font-size: 1.5rem;
+      //    color: #ddd;
+      //  }
+      //}
+      //ul{
+      //  .display;
+      //  .justify_content(space-between);
+      //  overflow: hidden;
+      //  li{
+      //    margin-right: 1.8rem;
+      //    a{
+      //      .display;
+      //      position: relative;
+      //      &:hover{
+      //        cursor: pointer;
+      //        .mask, span{
+      //          display: block;
+      //        }
+      //      }
+      //      img{
+      //        width: 6.4rem;
+      //        height: 5rem;
+      //      }
+      //      .mask{
+      //        position: absolute;
+      //        top:0;
+      //        width:100%;
+      //        height:100%;
+      //        background:#000;
+      //        opacity: .6;
+      //        display: none;
+      //      }
+      //      p{
+      //        position: absolute;
+      //        width:100%;
+      //        height:100%;
+      //        font-size: @font14;
+      //        //line-height: 1rem;
+      //        padding:0 1rem;
+      //        color: #fff;
+      //        .display;
+      //        .justify_content_center;
+      //        .align_items_center;
+      //        span{
+      //          display: none;
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
+    }
+  }
+  /***** 首页end *****/
 }
 
 
