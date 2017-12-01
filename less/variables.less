@@ -1,0 +1,61 @@
+
+@borderRadius:    .15rem;
+
+//** color
+@color-cfff:      rgba(255,255,255,1);
+@color-caaa:      rgba(255,255,255,.5);
+@color-cgreen:    rgba(51,177,79,.9);
+@color-cblue:    rgba(90,133,195,.9);
+@color-c000:      rgba(0,0,0,1);
+
+//** width , height
+
+@width: 100%;
+@height: 100%;
+
+//** fontSize
+@font12: .6rem;
+@font14: .7rem;
+@font16: .8rem;
+@font18: .9rem;
+@font20: 1rem;
+@font24: 1.2rem;
+@font26: 1.3rem;
+@font30: 1.5rem;
+@font40: 2rem;
+@font48: 2.4rem;
+@font60: 3rem;
+@font70: 3.5rem;
+@font80: 4rem;
+@font100: 5rem;
+@font120: 6rem;
+@font140: 7rem;
+@font160: 8rem;
+
+//**
+@button-shadow-inset:   0 1px 2px rgba(0,0,0,.6) inset;
+
+//** 动画效果
+.transition-effect(@type , @time){
+  transition:@type @time ease;
+  -moz-transition:@type @time ease; /* Firefox 4 */
+  -webkit-transition:@type @time ease; /* Safari and Chrome */
+  -o-transition:@type @time ease; /* Opera */
+}
+
+.transform(@transform) {
+  -webkit-transform: @transform; /* Safari 和 Chrome */
+  -moz-transform: @transform; /* Firefox */
+  -ms-transform: @transform; /* IE 9 */
+  -o-transform: @transform; /* Opera */
+  transform: @transform;
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
